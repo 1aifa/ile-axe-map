@@ -1,0 +1,255 @@
+campo_origem;valor_declarado;ocorrencias_v47;ocorrencias_bruto;tradicao;tradicoes_adicionais;nacoes;raiz;linhas;pratica;acao;nota
+categoria;angola;22;0;Candomblé;;Angola;;;;mapear;
+categoria;candomble;1415;0;Candomblé;;;;;;mapear;
+categoria;centro espirita;405;0;;;;;;;mapear;"rótulo institucional/nome da casa, não declaração de tradição — vai para ""Não especificada"""
+categoria;jeje;1;0;Candomblé;;Jeje;;;;mapear;
+categoria;ketu;9;0;Candomblé;;Ketu;;;;mapear;
+categoria;matriz africana;4;0;Matriz Africana;;;;;;mapear;
+categoria;nao informado;1010;0;;;;;;;descartar;
+categoria;outro;3170;0;;;;;;;descartar;
+categoria;terreiro;801;0;;;;;;;mapear;"""Terreiro"" é tipo de entidade, não tradição — vai para ""Não especificada"""
+categoria;umbanda;1133;0;Umbanda;;;;;;mapear;
+nacao;alaketo;10;0;Candomblé;;Ketu;Alaketo;;;mapear;Alaketo é raiz/família dentro de Ketu, não nação
+nacao;amburaxo angola;1;0;Candomblé;;Angola;;;;mapear;
+nacao;angola;289;0;Candomblé;;Angola;;;;mapear;
+nacao;angola bantu;1;0;Candomblé;;Angola;;;;mapear;
+nacao;angola caboclo;2;0;Candomblé;;Angola + Caboclo;;;;mapear;
+nacao;angola jeje keto;1;0;Candomblé;;Ketu + Jeje;;;;mapear;
+nacao;angola keto;9;0;Candomblé;;Ketu + Angola;;;;mapear;
+nacao;angola paketan;2;0;Candomblé;;Angola;Paketan;;;mapear;
+nacao;angola umbanda;4;0;Candomblé;;Angola;;Umbanda;;mapear;
+nacao;bantu;1;0;Candomblé;;Bantu;;;;mapear;
+nacao;caboclo;2;0;Candomblé;;Caboclo;;;;mapear;
+nacao;caboclo jeje;2;0;Candomblé;;Caboclo + Jeje;;;;mapear;
+nacao;caboclo nago;1;0;Candomblé;;Caboclo + Nagô;;;;mapear;
+nacao;efon;1;0;Candomblé;;Efon;;;;mapear;
+nacao;espirita linha branca;1;0;Espiritismo;;;;;;mapear;
+nacao;espiritual;1;0;;;;;;;revisar;valor sem correspondência
+nacao;grono keto;1;0;Candomblé;;Ketu;;;;revisar;"valor não reconhecido; provável erro de digitação na fonte"
+nacao;ijexa;12;0;Candomblé;;Ijexá;;;;mapear;
+nacao;ijexa keto;2;0;Candomblé;;Ketu + Ijexá;;;;mapear;
+nacao;jeje;20;0;Candomblé;;Jeje;;;;mapear;
+nacao;jeje angola;2;0;Candomblé;;Jeje + Angola;;;;mapear;
+nacao;jeje keto;4;0;Candomblé;;Ketu + Jeje;;;;mapear;
+nacao;jeje mahin savalu;1;0;Candomblé;;Jeje;Mahin/Savalu;;;mapear;
+nacao;jeje nago;2;0;Candomblé;;Jeje + Nagô;;;;mapear;
+nacao;jeje nago keto;1;0;Candomblé;;Ketu + Jeje;;;;mapear;
+nacao;jeje savalu;9;0;Candomblé;;Jeje;Savalu;;;mapear;
+nacao;jurema;21;0;Jurema;;;;;;mapear;
+nacao;keto;668;0;Candomblé;;Ketu;;;;mapear;
+nacao;keto alaketo;2;0;Candomblé;;Ketu;Alaketo;;;mapear;
+nacao;keto angola;32;0;Candomblé;;Ketu + Angola;;;;mapear;
+nacao;keto caboclo;1;0;Candomblé;;Ketu + Caboclo;;;;mapear;
+nacao;keto giro;1;0;Candomblé;;Ketu;;;;revisar;"valor não reconhecido; provável erro de digitação na fonte"
+nacao;keto ijexa;3;0;Candomblé;;Ketu + Ijexá;;;;mapear;
+nacao;keto jeje;9;0;Candomblé;;Ketu + Jeje;;;;mapear;
+nacao;keto nago;1;0;Candomblé;;Ketu + Nagô;;;;mapear;
+nacao;ketotapa;1;0;Candomblé;;Ketu;Tapa;;;revisar;
+nacao;ketu;25;0;Candomblé;;Ketu;;;;mapear;
+nacao;mina jeje;1;0;Candomblé;;Jeje;;;;mapear;
+nacao;nago;5;0;Candomblé;;Nagô;;;;mapear;
+nacao;nago ijexa;1;0;Candomblé;;Nagô + Ijexá;;;;mapear;
+nacao;nago jeje;1;0;Candomblé;;Jeje + Nagô;;;;mapear;
+nacao;nago vodum;7;0;Candomblé;;Nagô + Jeje;;;;mapear;
+nacao;nao informado;3;0;;;;;;;descartar;
+nacao;ojafurum ijexa;1;0;Candomblé;;Ijexá;Ojafurum;;;mapear;
+nacao;omoloko;1;0;;;;;;;revisar;valor sem correspondência
+nacao;outro;2;0;;;;;;;descartar;
+nacao;tambor de mina;3;0;Tambor de Mina;;;;;;mapear;
+nacao;todas;1;0;;;;;;;descartar;
+nacao;umbanda;82;0;Umbanda;;;;;;mapear;
+nacao;vodum nago;2;0;Candomblé;;Nagô + Jeje;;;;mapear;
+religion;africana;0;8;Matriz Africana;;;;;;mapear;
+religion;africanista;0;6;Matriz Africana;;;;;;mapear;
+religion;afro;0;6;Matriz Africana;;;;;;mapear;
+religion;afro amazonica;0;1;;;;;;;revisar;valor sem correspondência
+religion;afro brasileira;0;3;Matriz Africana;;;;;;mapear;
+religion;afro umbandista;0;2;Umbanda;;;;;;revisar;
+religion;alaketu;0;1;Candomblé;;Ketu;Alaketo;;;mapear;Alaketo é raiz/família dentro de Ketu, não nação
+religion;angola;0;5;Candomblé;;Angola;;;;mapear;
+religion;batuque;0;748;Batuque;;;;;;mapear;
+religion;cabinda;0;18;Candomblé;;Cabinda;;;;mapear;
+religion;candomble;0;1076;Candomblé;;;;;;mapear;
+religion;catimbo;0;5;Jurema;;;;;;mapear;Catimbó tratado como variante de Jurema
+religion;cigano;0;2;Umbanda;;;;Linha Branca;;mapear;
+religion;congo;0;1;Candomblé;;Bantu;;;;mapear;
+religion;culto a ifa;0;1;;;;;;;revisar;valor sem correspondência
+religion;culto ao orixa;0;1;;;;;;;revisar;valor sem correspondência
+religion;culto aos orixas;0;1;;;;;;;revisar;valor sem correspondência
+religion;cultura africana;0;1;;;;;;;revisar;valor sem correspondência
+religion;encantado ou pajelanca;0;1;;;;;;;revisar;valor sem correspondência
+religion;encantado pajelanca;0;7;Encantaria;;;;;;mapear;
+religion;esoterico;0;1;;;;;;;revisar;valor sem correspondência
+religion;esoterista;0;1;Espiritismo;;;;;;mapear;
+religion;espirita;0;14;Espiritismo;;;;;;mapear;
+religion;espirita umbandista;0;1;Umbanda;;;;;;mapear;
+religion;espiritismo;0;3;Espiritismo;;;;;;mapear;
+religion;espiritismo kardecista;0;1;;;;;;;revisar;valor sem correspondência
+religion;ioruba;0;1;Candomblé;;Nagô;;;;mapear;
+religion;jeje;0;9;Candomblé;;Jeje;;;;mapear;
+religion;jeje ijexa;0;2;Candomblé;;Jeje + Ijexá;;;;mapear;
+religion;jeje mina nago;0;1;;;;;;;revisar;valor sem correspondência
+religion;jeje nago eba;0;1;Candomblé;;Jeje + Nagô;Ebá;;;mapear;
+religion;jeje savalu;0;1;Candomblé;;Jeje;Savalu;;;mapear;
+religion;jurema;0;172;Jurema;;;;;;mapear;
+religion;kardecismo;0;1;;;;;;;revisar;valor sem correspondência
+religion;kardecista;0;5;Espiritismo;;;;;;mapear;
+religion;ketu;0;4;Candomblé;;Ketu;;;;mapear;
+religion;linha cruzada;0;68;Umbanda;;;;Linha Cruzada;;mapear;
+religion;linha do oriente;0;2;Umbanda;;;;Linha Branca;;mapear;
+religion;matriz africana;0;3;Matriz Africana;;;;;;mapear;
+religion;mina de caboclo;0;43;Tambor de Mina;;Caboclo;;;;mapear;
+religion;mina nago;0;5;Candomblé;;Jeje + Nagô;;;;mapear;
+religion;mina omoloco;0;1;;;;;;;revisar;valor sem correspondência
+religion;mina vodum;0;3;Candomblé;;Jeje;;;;mapear;
+religion;mocambique;0;2;Candomblé;;Bantu;;;;mapear;
+religion;nacao;0;86;;;;;;;descartar;
+religion;nacao africana;0;2;Matriz Africana;;;;;;mapear;
+religion;nacao afro brasileira;0;1;;;;;;;revisar;valor sem correspondência
+religion;nago;0;233;Candomblé;;Nagô;;;;mapear;
+religion;nago eba;0;1;Candomblé;;Nagô;;;;mapear;
+religion;nago ijexa;0;1;Candomblé;;Nagô + Ijexá;;;;mapear;
+religion;nago vodum;0;2;Candomblé;;Nagô + Jeje;;;;mapear;
+religion;omoloco;0;40;Omoloko;;;;;;mapear;
+religion;oriental;0;1;;;;;;;revisar;valor sem correspondência
+religion;orunmila;0;1;;;;;;;revisar;valor sem correspondência
+religion;outros;0;28;;;;;;;descartar;
+religion;oyo;0;3;Candomblé;;Oyó;;;;mapear;
+religion;oyo com ijexa;0;1;;;;;;;revisar;valor sem correspondência
+religion;pena e maraca;0;69;Encantaria;;;;;;mapear;
+religion;povo cigano;0;1;;;;;;;revisar;valor sem correspondência
+religion;povo de rua;0;1;;;;;;;revisar;valor sem correspondência
+religion;povo do oriente;0;3;Umbanda;;;;Linha Branca;;mapear;
+religion;quimbanda;0;466;Umbanda;;;;Quimbanda;;mapear;
+religion;religiao de matriz africana;0;1;;;;;;;revisar;valor sem correspondência
+religion;ritual de oyo;0;1;;;;;;;revisar;valor sem correspondência
+religion;tambor de mina;0;383;Tambor de Mina;;;;;;mapear;
+religion;tore;0;2;Tambor de Mina;;;;;;mapear;
+religion;tracado umbanda com nago;0;1;;;;;;;revisar;valor sem correspondência
+religion;umbanda;0;1533;Umbanda;;;;;;mapear;
+religion;umbanda cruzada;0;1;Umbanda;;;;Linha Cruzada;;mapear;
+religion;umbanda e exu ciganos;0;1;;;;;;;revisar;valor sem correspondência
+religion;umbanda mista;0;1;;;;;;;revisar;valor sem correspondência
+religion;umbanda tracada com xango;0;1;Umbanda;;;;;;mapear;
+religion;umbandomble;0;14;Umbanda;;;;;;revisar;
+religion;vodum;0;13;Candomblé;;Jeje;;;;mapear;
+religion;xamba;0;6;Candomblé;;Xambá;;;;mapear;
+religion;xango;0;17;Xangô;;;;;;mapear;
+religion;yoruba;0;1;Candomblé;;Nagô;;;;mapear;
+religion;yoruba eba;0;1;Candomblé;;Nagô;;;;mapear;
+nation_line_raw;africana;0;4;Matriz Africana;;;;;;mapear;
+nation_line_raw;afro amazonica;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;afro brasileiro;0;1;Matriz Africana;;;;;;mapear;
+nation_line_raw;afro umbandista;0;1;Umbanda;;;;;;revisar;
+nation_line_raw;agonita;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;alaketu;0;41;Candomblé;;Ketu;Alaketo;;;mapear;Alaketo é raiz/família dentro de Ketu, não nação
+nation_line_raw;angola;0;171;Candomblé;;Angola;;;;mapear;
+nation_line_raw;angola e alma;0;1;;;;;;;revisar;"valor isolado não identificado; revisão humana"
+nation_line_raw;angola kassange;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;angola lokumbata;0;1;Candomblé;;Angola;;;;mapear;
+nation_line_raw;angola moxicongo;0;1;Candomblé;;Angola;;;;mapear;
+nation_line_raw;angola moxikongo;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;angola muxicongo;0;1;Candomblé;;Angola;;;;mapear;
+nation_line_raw;axe oxumare;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;batuque;0;56;Batuque;;;;;;mapear;
+nation_line_raw;bobo kesha;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;bobo quexa;0;1;;;;;;;revisar;"valor isolado não identificado; revisão humana"
+nation_line_raw;cabinda;0;348;Candomblé;;Cabinda;;;;mapear;
+nation_line_raw;caboclo boiadeiro;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;candomble;0;4;Candomblé;;;;;;mapear;
+nation_line_raw;catimbo;0;2;Jurema;;;;;;mapear;Catimbó tratado como variante de Jurema
+nation_line_raw;congo;0;3;Candomblé;;Bantu;;;;mapear;
+nation_line_raw;culto a ifa;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;cura;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;efan;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;efon;0;5;Candomblé;;Efon;;;;mapear;
+nation_line_raw;egba;0;1;Candomblé;;Nagô;Egba;;;mapear;
+nation_line_raw;embanda;0;4;Umbanda;;;;;;revisar;
+nation_line_raw;encantado;0;7;Encantaria;;;;;;mapear;
+nation_line_raw;esoterico;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;esoterismo;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;espirita;0;2;Espiritismo;;;;;;mapear;
+nation_line_raw;ewe fon;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;exum das almas;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;fonlaie;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;gessa;0;2;;;;;;;revisar;"valor isolado não identificado; revisão humana"
+nation_line_raw;guine;0;1;;;;;;;revisar;"valor isolado não identificado; revisão humana"
+nation_line_raw;ijeja;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;ijexa;0;45;Candomblé;;Ijexá;;;;mapear;
+nation_line_raw;ioruba;0;2;Candomblé;;Nagô;;;;mapear;
+nation_line_raw;jeje;0;371;Candomblé;;Jeje;;;;mapear;
+nation_line_raw;jeje eba;0;13;Candomblé;;Jeje;;;;mapear;
+nation_line_raw;jeje egba;0;7;Candomblé;;Jeje;;;;mapear;
+nation_line_raw;jeje ijexa;0;323;Candomblé;;Jeje + Ijexá;;;;mapear;
+nation_line_raw;jeje ijexa com cabinda;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;jeje mahin;0;47;Candomblé;;Jeje;Mahin;;;mapear;
+nation_line_raw;jeje mina nago;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;jeje nago;0;9;Candomblé;;Jeje + Nagô;;;;mapear;
+nation_line_raw;jeje nago eba;0;1;Candomblé;;Jeje + Nagô;Ebá;;;mapear;
+nation_line_raw;jeje savalu;0;1;Candomblé;;Jeje;Savalu;;;mapear;
+nation_line_raw;jurema;0;226;Jurema;;;;;;mapear;
+nation_line_raw;jurema tracada;0;1;Jurema;;;;;;mapear;
+nation_line_raw;ketu;0;314;Candomblé;;Ketu;;;;mapear;
+nation_line_raw;ketu keta;0;1;Candomblé;;Ketu;;;;mapear;
+nation_line_raw;ketu nago;0;1;Candomblé;;Ketu + Nagô;;;;mapear;
+nation_line_raw;linha cigana oriental;0;1;Umbanda;;;;Linha Branca;;mapear;
+nation_line_raw;linha cruzada;0;71;Umbanda;;;;Linha Cruzada;;mapear;
+nation_line_raw;linha de oxossi;0;1;Umbanda;;;;Linha Branca;;mapear;
+nation_line_raw;linha do oriente;0;1;Umbanda;;;;Linha Branca;;mapear;
+nation_line_raw;mahin;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;manto amerindio;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;marri;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;mina;0;195;Candomblé;;Jeje;;;;mapear;
+nation_line_raw;mina e angola;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;mina jeje nago;0;1;Candomblé;;Jeje + Nagô;;;;mapear;
+nation_line_raw;mina nago;0;6;Candomblé;;Jeje + Nagô;;;;mapear;
+nation_line_raw;mina vodum;0;1;Candomblé;;Jeje;;;;mapear;
+nation_line_raw;mista;0;1;;;;;;;descartar;
+nation_line_raw;mocambique;0;6;Candomblé;;Bantu;;;;mapear;
+nation_line_raw;mucurumi;0;1;;;;;;;revisar;"valor isolado não identificado; revisão humana"
+nation_line_raw;nacao;0;2;;;;;;;descartar;
+nation_line_raw;nago;0;870;Candomblé;;Nagô;;;;mapear;
+nation_line_raw;nago cabinda;0;1;Candomblé;;Cabinda;;;;mapear;
+nation_line_raw;nago com umbanda;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;nago eba;0;9;Candomblé;;Nagô;;;;mapear;
+nation_line_raw;nago egba;0;4;Candomblé;;Nagô;;;;mapear;
+nation_line_raw;nago jeje;0;1;Candomblé;;Jeje + Nagô;;;;mapear;
+nation_line_raw;nago jenjen;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;nago vodu;0;1;Candomblé;;Nagô;;;;mapear;
+nation_line_raw;nago vodum;0;2;Candomblé;;Nagô + Jeje;;;;mapear;
+nation_line_raw;omoloco;0;54;Omoloko;;;;;;mapear;
+nation_line_raw;oriente;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;orunmila;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;outra;0;23;;;;;;;descartar;
+nation_line_raw;oya jeje;0;1;Candomblé;;Oyó + Jeje;;;;mapear;
+nation_line_raw;oyo;0;149;Candomblé;;Oyó;;;;mapear;
+nation_line_raw;oyo com jexa;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;oyo ijeja;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;oyo ijexa;0;1;Candomblé;;Oyó + Ijexá;;;;mapear;
+nation_line_raw;oyo jeje;0;3;Candomblé;;Oyó + Jeje;;;;mapear;
+nation_line_raw;pena e maraca;0;68;Encantaria;;;;;;mapear;
+nation_line_raw;quimbanda;0;151;Umbanda;;;;Quimbanda;;mapear;
+nation_line_raw;sete linhas;0;1;Umbanda;;;;Linha Branca;;mapear;
+nation_line_raw;setes linhas de umbanda;0;1;Umbanda;;;;;;mapear;
+nation_line_raw;tambor de mina;0;248;Tambor de Mina;;;;;;mapear;
+nation_line_raw;tore;0;4;Tambor de Mina;;;;;;mapear;
+nation_line_raw;tracado;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;tumbojussara;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;umbanda;0;30;Umbanda;;;;;;mapear;
+nation_line_raw;umbanda branca;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;umbanda com nago;0;2;Umbanda;;;;;;revisar;
+nation_line_raw;umbanda cruzada;0;2;Umbanda;;;;Linha Cruzada;;mapear;
+nation_line_raw;umbanda esoterica;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;umbanda linha branca;0;782;Umbanda;;;;Linha Branca;;mapear;
+nation_line_raw;umbanda lunda kioko;0;1;Umbanda;;;;;;revisar;
+nation_line_raw;umbanda moxicongo;0;1;Umbanda;;;;;;revisar;
+nation_line_raw;umbanda nativa;0;2;Umbanda;;;;;;revisar;
+nation_line_raw;umbanda pura linha branca;0;6;Umbanda;;;;Linha Branca;;mapear;
+nation_line_raw;umbanda pura linha branca pura;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;umbanda tradicional;0;1;;;;;;;revisar;valor sem correspondência
+nation_line_raw;umbandomble;0;15;Umbanda;;;;;;revisar;
+nation_line_raw;unbandaime;0;2;Umbanda;;;;;;mapear;
+nation_line_raw;vodum;0;14;Candomblé;;Jeje;;;;mapear;
+nation_line_raw;xamba;0;43;Candomblé;;Xambá;;;;mapear;
+nation_line_raw;xango;0;9;Xangô;;;;;;mapear;
+nation_line_raw;yoruba;0;7;Candomblé;;Nagô;;;;mapear;

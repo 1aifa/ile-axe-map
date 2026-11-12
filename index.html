@@ -18,7 +18,7 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script>
-    const DATASET_VERSION = 'v4.7';
+    const DATASET_VERSION = 'v4.8';
     const DATASET_DATE = '2026-11-06';
   </script>
   <style>
@@ -236,6 +236,11 @@
     .detail__link + .detail__link { margin-top: 8px; }
     .detail__link--warm { border-color: var(--warm); color: var(--warm); }
     .detail__link--warm:hover { background: var(--warm); color: var(--bg-elevated); }
+    .detail__missing { margin-top: 18px; padding: 14px; border: 1px dashed var(--warm); border-radius: var(--radius-sm); background: var(--warm-soft, rgba(168,70,15,.05)); }
+    .detail__missing__title { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--warm); }
+    .detail__missing__text { font-size: 12px; line-height: 1.5; color: var(--text-muted); margin: 6px 0 0; }
+    .detail__missing__list { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+    .detail__missing__list li { font-size: 11px; padding: 3px 8px; border: 1px solid var(--warm); border-radius: 100px; color: var(--warm); }
     .rail__clear-btn { margin-top: 8px; padding: 6px 12px; border: 1px solid var(--accent); border-radius: var(--radius-sm); background: var(--bg-elevated); color: var(--accent); cursor: pointer; font: 600 12px var(--font-body); }
     .rail__clear-btn:hover { background: var(--accent-soft); }
 
@@ -286,12 +291,13 @@
     /* === Mobile === */
     @media (max-width: 600px) {
       #map-loading { left: 0; bottom: 52px; }
-      .topbar { padding: 0 10px; gap: 8px; }
-      .topbar__title { font-size: 15px; }
+      .topbar { padding: 0 12px; gap: 6px; }
+      .topbar__title { font-size: 14px; }
       .topbar__count { display: none; }
       .topbar__validation { display: none; }
       .topbar__btn:not(.info-btn):not(.contact-btn) { display: none; }
-      .topbar__btn.contact-btn { font-size: 12px; padding: 0 10px; }
+      .topbar__btn.info-btn { font-size: 11px; padding: 0 8px; }
+      .topbar__btn.contact-btn { font-size: 11px; padding: 0 8px; }
       .topbar__btn.contact-btn:hover { background: var(--accent-soft); }
       .contact-btn__full { display: none; }
       .contact-btn__short { display: inline; }
@@ -376,14 +382,14 @@
       <p>Atlas aberto de terreiros de candomblé e espaços religiosos afro-brasileiros do Brasil.</p>
       <h3>Dataset</h3>
       <dl>
-        <dt>Versão</dt><dd>v4.7 (camada editorial: fotos CEAO, fundação e orixá regente)</dd>
+        <dt>Versão</dt><dd>v4.8 (taxonomia em três níveis: tradição → nação → raiz; camada editorial: fotos CEAO, fundação e orixá regente)</dd>
         <dt>Modelo</dt><dd>entidade ↔ ocorrência (multi-fonte)</dd>
         <dt>Total</dt><dd id="dataset-total">8.036 entidades</dd>
         <dt>Com coordenada</dt><dd id="dataset-georef">8.036</dd>
         <dt>Fontes</dt><dd>CEAO/UFBA · CNPJ/RFB · Mapeando Axé · Google Places · OSM · SEFAZ · CEAP</dd>
       </dl>
       <h3>As nações no mapa</h3>
-      <p style="font-size:12.5px;line-height:1.55">No candomblé, <em>nação</em> é uma forma de nomear linhagens e referências rituais compartilhadas; não corresponde de modo simples a países atuais nem define tradições rígidas ou isoladas.</p>
+      <p style="font-size:12.5px;line-height:1.55">O mapa organiza a classificação em três níveis: a <strong>tradição</strong> (candomblé, umbanda, jurema, tambor de mina, batuque, terecô, omoloko, entre outras), a <strong>nação</strong> — forma de nomear linhagens e referências rituais compartilhadas — e a <strong>raiz</strong> ou família, quando a casa a declara. Uma casa pode declarar mais de uma tradição ou nação; nesse caso, todas ficam registradas, sem escolher uma como definitiva.</p>
       <p style="font-size:12.5px;line-height:1.55"><strong>Keto (Queto)</strong> reúne casas ligadas sobretudo a matrizes iorubás, com centralidade dos orixás e repertórios próprios de língua, cantos e práticas. <strong>Angola</strong> vincula-se a matrizes bantas da África Central, com referências aos inquices e formas rituais transmitidas por suas comunidades. <strong>Jeje</strong> identifica linhagens relacionadas a matrizes ewe-fon e à reverência aos voduns. <strong>Keto Angola</strong> é adotada por casas que reconhecem a articulação entre as heranças Keto e Angola. A <strong>Umbanda</strong> aparece como categoria distinta: não é uma nação do candomblé, mas uma religião afro-brasileira com identidade própria.</p>
       <p style="font-size:12.5px;line-height:1.55">A classificação é autodeclarada, e o mapa respeita a maneira como cada casa se identifica.</p>
       <h3>Colabore</h3>
@@ -416,11 +422,13 @@
   </main>
 
   <script>
-    /* Rótulos literais do CEAO; cores não representam macrogrupos analíticos. */
+    /* Cores por tradição (nível 1). A nação (nível 2) é lida no painel e nos filtros. */
     const nationColors = {
-      'Keto': '#0072B2', 'Angola': '#D55E00', 'Jêje': '#009E73',
-      'Umbanda': '#56B4E9', 'Ijexá': '#E69F00', 'Alaketo': '#CC79A7',
-      'Não informado': '#999999'
+      'Candomblé': '#0072B2', 'Umbanda': '#56B4E9', 'Jurema': '#009E73',
+      'Tambor de Mina': '#D55E00', 'Batuque': '#E69F00', 'Omoloko': '#CC79A7',
+      'Encantaria': '#6F4E7C', 'Xangô': '#8C564B', 'Terecô': '#A6761D',
+      'Jarê': '#7F7F7F', 'Mesa Branca': '#BFBFBF', 'Espiritismo': '#B0B0B0',
+      'Matriz Africana': '#8A8F98', 'Não especificada': '#B9B4AC', 'Não informado': '#B9B4AC'
     };
     const nationPalette = ['#0072B2','#D55E00','#009E73','#E69F00','#CC79A7','#56B4E9','#6F4E7C','#8C564B'];
     let categoryOrder = [];
@@ -478,7 +486,8 @@
     setTileLayer();
 
     let features = [], sourceReady = false;
-    let activeNacao = new Set(), activeFonte = new Set();
+    let activeTrad = new Set(), activeNacao = new Set(), activeFonte = new Set();
+    let nacaoOrder = [];
     let selectedFeature = null, popup = null, lastTrigger = null;
     let searchQuery = '', listSubset = [];
     let loadTimer = null, mapErrorShown = false;
@@ -508,6 +517,8 @@
     }
 
     function classify(p) {
+      if (p.tradicao) return p.tradicao;
+      // compatibilidade com bases anteriores à v4.8
       if (p.categoria && p.categoria !== 'Outro') return p.categoria;
       let declared = String(p.nacao || '').trim().replace(/\s+/g, ' ');
       // série de curadoria embutida: extrai o valor declarado
@@ -518,8 +529,27 @@
           declared = nacaoEntry && nacaoEntry.valor ? String(nacaoEntry.valor).trim() : '';
         } catch (e) { declared = ''; }
       }
-      return declared && !/^n[aã]o (informado|declarado)$/i.test(declared) ? declared : 'Não informado';
+      return declared && !/^n[aã]o (informado|declarado)$/i.test(declared) ? declared : 'Não especificada';
     }
+
+    function nacoesOf(p) {
+      if (Object.prototype.hasOwnProperty.call(p, 'nacoes')) return Array.isArray(p.nacoes) ? p.nacoes : [];
+      // compatibilidade com bases anteriores à v4.8
+      const d = String(p.nacao || '').trim().replace(/\s+/g, ' ');
+      return d && !/^n[aã]o (informado|declarado)$/i.test(d) ? [d] : [];
+    }
+
+    function passaNacao(p) {
+      const ns = (p._nacoes && p._nacoes.length) ? p._nacoes : ['Sem nação declarada'];
+      for (let i = 0; i < ns.length; i++) if (activeNacao.has(ns[i])) return true;
+      return false;
+    }
+
+    function rotuloNacao(p) {
+      var ns = p._nacoes || [];
+      return ns.length ? ns.join(' · ') : 'Nação não informada';
+    }
+    function rotuloTrad(p) { return p._tradicao || 'Não especificada'; }
 
     function getName(p) { return p.nome || p.name || p.title || 'Terreiro sem nome'; }
     function getFonteLabel(p) {
@@ -536,61 +566,60 @@
     function buildFilters() {
       const holder = $('filters');
       holder.innerHTML = '';
-      const categoryCounts = new Map();
+      const SEM_NACAO = 'Sem nação declarada';
+      const tradCounts = new Map();
+      const nacCounts = new Map();
       features.forEach(f => {
-        const category = f.properties._nacao;
-        categoryCounts.set(category, (categoryCounts.get(category) || 0) + 1);
+        const pr = f.properties;
+        tradCounts.set(pr._tradicao, (tradCounts.get(pr._tradicao) || 0) + 1);
+        const ns = (pr._nacoes && pr._nacoes.length) ? pr._nacoes : [SEM_NACAO];
+        ns.forEach(n => nacCounts.set(n, (nacCounts.get(n) || 0) + 1));
       });
-      categoryOrder = [...categoryCounts.keys()].sort((a, b) => {
-        if (a === 'Não informado') return 1;
-        if (b === 'Não informado') return -1;
-        return categoryCounts.get(b) - categoryCounts.get(a) || a.localeCompare(b, 'pt-BR');
+      const ordena = (counts, ultimo) => [...counts.keys()].sort((a, b) => {
+        if (a === ultimo) return 1;
+        if (b === ultimo) return -1;
+        return counts.get(b) - counts.get(a) || a.localeCompare(b, 'pt-BR');
       });
+      categoryOrder = ordena(tradCounts, 'Não especificada');
+      nacaoOrder = ordena(nacCounts, SEM_NACAO);
+      activeTrad = new Set(categoryOrder);
+      activeNacao = new Set(nacaoOrder);
 
-      // --- Nação ---
-      const nacaoGroup = document.createElement('div');
-      nacaoGroup.className = 'filter-group';
-      nacaoGroup.innerHTML = '<button class="filter-group__title" type="button" aria-expanded="true">Nação</button><div class="filter-group__body"></div>';
-      const nacaoBody = nacaoGroup.querySelector('.filter-group__body');
-
-      // Select-all checkbox
-      const allNacaoCbId = 'all-nacao';
-      const allNacao = makeCheckbox(allNacaoCbId, 'Selecionar todas', null, true, function() {
-        var cb = document.getElementById(allNacaoCbId);
-        var checked = cb.checked;
-        if (checked) {
-          activeNacao = new Set(categoryOrder);
-        } else {
-          activeNacao.clear();
-        }
-        nacaoBody.querySelectorAll('.filter-opt[data-cat]').forEach(opt => { var cb = opt.querySelector('input[type=checkbox]'); if (cb) cb.checked = checked; });
-        updateMarkers(); updateList();
-      });
-      allNacao.el.classList.add('filter-opt--all');
-      nacaoBody.appendChild(allNacao.el);
-
-      categoryOrder.forEach((cat, index) => {
-        activeNacao.add(cat);
-        const count = categoryCounts.get(cat);
-        const cbId = 'nac-' + index;
-        const opt = makeCheckbox(cbId, cat, nationColor(cat), true, function() {
-          var cb = document.getElementById(cbId);
-          if (cb.checked) activeNacao.add(cat);
-          else activeNacao.delete(cat);
-          syncAllCheckbox(allNacao, nacaoBody, 'cat');
+      function montarGrupo(titulo, ordem, counts, set, prefixo, allId) {
+        const grupo = document.createElement('div');
+        grupo.className = 'filter-group';
+        grupo.innerHTML = '<button class="filter-group__title" type="button" aria-expanded="true">' + titulo + '</button><div class="filter-group__body"></div>';
+        const body = grupo.querySelector('.filter-group__body');
+        const all = makeCheckbox(allId, 'Selecionar todas', null, true, function() {
+          const cb = document.getElementById(allId);
+          const checked = cb.checked;
+          if (checked) { ordem.forEach(v => set.add(v)); } else { set.clear(); }
+          body.querySelectorAll('.filter-opt[data-cat]').forEach(opt => { var c2 = opt.querySelector('input[type=checkbox]'); if (c2) c2.checked = checked; });
           updateMarkers(); updateList();
         });
-        opt.el.dataset.cat = cat;
-        opt.el.querySelector('.filter-opt__label').innerHTML += ' <span class="filter-opt__count">' + count + '</span>';
-        nacaoBody.appendChild(opt.el);
-      });
+        all.el.classList.add('filter-opt--all');
+        body.appendChild(all.el);
+        ordem.forEach((valor, index) => {
+          const cbId = prefixo + '-' + index;
+          const opt = makeCheckbox(cbId, valor, nationColor(valor), true, function() {
+            const cb = document.getElementById(cbId);
+            if (cb.checked) set.add(valor); else set.delete(valor);
+            syncAllCheckbox(all, body, 'cat');
+            updateMarkers(); updateList();
+          });
+          opt.el.dataset.cat = valor;
+          opt.el.querySelector('.filter-opt__label').innerHTML += ' <span class="filter-opt__count">' + counts.get(valor) + '</span>';
+          body.appendChild(opt.el);
+        });
+        grupo.querySelector('.filter-group__title').addEventListener('click', function() {
+          const collapsed = grupo.classList.toggle('collapsed');
+          this.setAttribute('aria-expanded', String(!collapsed));
+        });
+        holder.appendChild(grupo);
+      }
 
-      // Toggle collapse
-      nacaoGroup.querySelector('.filter-group__title').addEventListener('click', function() {
-        const collapsed = nacaoGroup.classList.toggle('collapsed');
-        this.setAttribute('aria-expanded', String(!collapsed));
-      });
-      holder.appendChild(nacaoGroup);
+      montarGrupo('Tradição', categoryOrder, tradCounts, activeTrad, 'trad', 'all-trad');
+      montarGrupo('Nação', nacaoOrder, nacCounts, activeNacao, 'nac', 'all-nacao');
 
       // --- Fonte ---
       const fonteGroup = document.createElement('div');
@@ -669,7 +698,7 @@
 
     /* === Fonte GeoJSON, clustering e interação === */
     function colorExpression() {
-      const expression = ['match', ['get', '_nacao']];
+      const expression = ['match', ['get', '_tradicao']];
       categoryOrder.forEach(category => expression.push(category, nationColor(category)));
       expression.push('#999999');
       return expression;
@@ -699,7 +728,7 @@
         visibleFeatures.forEach(function(feature) {
           const p = feature.properties;
           const coordinates = feature.geometry.coordinates;
-          const marker = L.circleMarker([coordinates[1], coordinates[0]], { radius: 8, color: '#567F49', weight: 2.5, fillColor: nationColor(p._nacao), fillOpacity: .75, keyboard: true });
+          const marker = L.circleMarker([coordinates[1], coordinates[0]], { radius: 8, color: '#567F49', weight: 2.5, fillColor: nationColor(p._tradicao), fillOpacity: .75, keyboard: true });
           marker._terreiroFeature = feature;
           marker.on('click', function() { onPointClick(feature, marker); });
           marker.on('mouseover focus', function() { showTooltip(feature); });
@@ -738,8 +767,73 @@
       const coordinates = feature.geometry.coordinates;
       popup = L.popup({ closeButton: false, closeOnClick: false, offset: [0, -14] })
         .setLatLng([coordinates[1], coordinates[0]])
-        .setContent('<div style="font-weight:600;font-size:12px">' + escapeHtml(getName(p)) + '</div><div style="color:var(--text-muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-top:2px">' + escapeHtml(p._nacao) + '</div>')
+        .setContent('<div style="font-weight:600;font-size:12px">' + escapeHtml(getName(p)) + '</div><div style="color:var(--text-muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-top:2px">' + escapeHtml(rotuloTrad(p) + ' · ' + rotuloNacao(p)) + '</div>')
         .openOn(map);
+    }
+
+    /* === Canal de contribuição: corrigir e completar a ficha === */
+    var CONTRIB_EMAIL = 'ileaxemap@gmail.com';
+
+    function missingFields(p) {
+      var out = [];
+      var ns = nacoesOf(p);
+      var trad = p._tradicao || classify(p);
+      if (!ns.length) out.push('Nação');
+      if (!trad || trad === 'Não especificada') out.push('Vertente religiosa');
+      if (!String(p.ano_fundacao || '').trim()) out.push('Ano de fundação');
+      if (!String(p.regente || '').trim()) out.push('Orixá regente');
+      if (!String(p.municipio || '').trim()) out.push('Município');
+      if (!String(p.foto_thumb || '').trim()) out.push('Foto da fachada');
+      return out;
+    }
+
+    function contribLink(p, kind) {
+      var nome = getName(p);
+      var id = String(p.entity_id || '');
+      var loc = [p.municipio, p.uf].filter(Boolean).join(' / ');
+      var fonte = p.fontes || p.fonte ? getFonteLabel(p) : '';
+      var L = [];
+      if (kind === 'retirar') {
+        L.push('Solicito a RETIRADA deste registro do mapa. A retirada não exige justificativa.', '');
+        L.push('Registro: ' + nome);
+        if (id) L.push('ID: ' + id);
+        if (loc) L.push('Localização no mapa: ' + loc);
+        if (fonte) L.push('Fonte atual: ' + fonte);
+        L.push('', 'Quem solicita: ( ) liderança ou membro da casa  ( ) familiar ou representante  ( ) outra pessoa');
+        L.push('Motivo (opcional):', '');
+        L.push('Nome para contato (não publicado):');
+      } else {
+        L.push('Quero ' + (kind === 'completar' ? 'COMPLETAR' : 'CORRIGIR') + ' a ficha deste registro no mapa.', '');
+        L.push('Registro: ' + nome);
+        if (id) L.push('ID: ' + id);
+        if (loc) L.push('Localização no mapa: ' + loc);
+        if (fonte) L.push('Fonte atual: ' + fonte);
+        var atual = [];
+        var tradTxt = String(p._tradicao || p.tradicao || '').trim();
+        if (tradTxt && tradTxt !== 'Não especificada') atual.push('Tradição: ' + tradTxt);
+        if (nacoesOf(p).length) atual.push('Nação: ' + nacoesOf(p).join(' · '));
+        if (String(p.raiz || '').trim()) atual.push('Raiz: ' + p.raiz);
+        if (String(p.ano_fundacao || '').trim()) atual.push('Ano de fundação: ' + p.ano_fundacao);
+        if (String(p.regente || '').trim()) atual.push('Orixá regente: ' + p.regente);
+        if (atual.length) L.push('', 'O que já está no mapa: ' + atual.join(' · '));
+        L.push('', 'Preencha só o que você souber — deixe em branco o que não se aplica.');
+        L.push('Os itens marcados (não publicado) não vão para o mapa.', '');
+        L.push('1. Seu nome (não publicado):');
+        L.push('2. Sua relação com a casa: ( ) liderança  ( ) membro  ( ) familiar  ( ) pesquisador(a)  ( ) outra');
+        L.push('3. Nome do terreiro, centro ou casa:');
+        L.push('4. Nome da liderança responsável (não publicado):');
+        L.push('5. Vertente religiosa (candomblé, umbanda, jurema, tambor de mina, outra):');
+        L.push('6. Nação, se houver:');
+        L.push('7. Ano de fundação:');
+        L.push('8. Endereço ou link do Google Maps:');
+        L.push('9. Ponto de referência:');
+        L.push('10. Redes sociais (link do perfil):');
+        L.push('11. O que está incorreto hoje na ficha:');
+        L.push('12. Foto da fachada: ( ) envio em anexo  ( ) não tenho');
+        L.push('', 'Autorizo o uso dessas informações no mapa, exceto os itens marcados (não publicado): ( ) sim');
+      }
+      var subject = 'Ilê Axé Map — ' + (kind === 'retirar' ? 'retirada de registro' : (kind === 'completar' ? 'completar ficha' : 'correção de ficha')) + ' — ' + nome;
+      return 'mailto:' + CONTRIB_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(L.join('\r\n'));
     }
 
     function showDetail(feature, trigger) {
@@ -756,7 +850,7 @@
       else if (p.geo_status && String(p.geo_status).indexOf('coordenada_validada_responsavel') !== -1) displayProps.geo_status = 'Localização confirmada pela equipe responsável';
       else if (p.geo_status && String(p.geo_status).indexOf('herdado_v2') !== -1) displayProps.geo_status = 'Georreferenciado pela base validada da Bahia';
       const [lng, lat] = feature.geometry.coordinates;
-      $('detail-nacao').textContent = p._nacao;
+      $('detail-nacao').textContent = rotuloTrad(p) + ' · ' + rotuloNacao(p);
       $('detail-title').textContent = getName(p);
       let html = '';
       if (p.foto_thumb) {
@@ -764,19 +858,37 @@
         if (src.indexOf('terreiros.ceao.ufba.br/_FT/pq/') !== -1) { var m = src.match(/\/pq\/(\d+)\./); if (m) src = 'data/ceao/fotos/' + m[1] + '_thumb.jpg'; }
         html += '<img class="detail__photo" src="' + escapeHtml(src) + '" alt="' + escapeHtml(getName(p)) + '" loading="lazy" onerror="this.style.display=\'none\'">';
       }
-      var seen = {};
-      [['nacao','Nação'],['categoria','Categoria'],['ano_fundacao','Fundação'],['regente','Orixá regente'],['municipio','Município'],['uf','Estado'],['geo_status','Precisão da localização']].forEach(function(pair) {
-        var key = pair[0], label = pair[1];
-        if (!displayProps[key]) return;
-        var val = String(displayProps[key]);
-        if (/^n[aã]o (tem|informado)/i.test(val)) return;
-        if (seen[label]) return; seen[label] = true;
-        html += '<div class="info-row"><div class="info-row__label">' + label + '</div><div class="info-row__value">' + escapeHtml(val) + '</div></div>';
+      var linhasFicha = [
+        ['Tradição', p._tradicao && p._tradicao !== 'Não especificada' ? p._tradicao : ''],
+        ['Nação', (p._nacoes && p._nacoes.length) ? p._nacoes.join(' · ') : ''],
+        ['Raiz / linhagem', p.raiz || ''],
+        ['Linhas', (p.linhas && p.linhas.length) ? p.linhas.join(' · ') : ''],
+        ['Fundação', p.ano_fundacao || ''],
+        ['Orixá regente', p.regente || ''],
+        ['Município', p.municipio || ''],
+        ['Estado', p.uf || ''],
+        ['Precisão da localização', displayProps.geo_status || '']
+      ];
+      linhasFicha.forEach(function(par) {
+        if (!par[1]) return;
+        html += '<div class="info-row"><div class="info-row__label">' + par[0] + '</div><div class="info-row__value">' + escapeHtml(String(par[1])) + '</div></div>';
       });
       if (p.fonte) html += '<div class="info-row"><div class="info-row__label">Fonte</div><div class="info-row__value">' + escapeHtml(getFonteLabel(p)) + '</div></div>';
+      // --- espaço para a comunidade corrigir e completar ---
+      var faltando = missingFields(p);
+      if (faltando.length) {
+        html += '<div class="detail__missing">' +
+          '<div class="detail__missing__title">Ficha incompleta</div>' +
+          '<p class="detail__missing__text">Estes dados não foram declarados por nenhuma fonte. Quem conhece a casa pode completar — basta saber um item.</p>' +
+          '<ul class="detail__missing__list">' + faltando.map(function(f) { return '<li>' + escapeHtml(f) + '</li>'; }).join('') + '</ul>' +
+          '<a class="detail__link detail__link--warm" href="' + contribLink(p, 'completar') + '">Completar estas informações ↗</a>' +
+          '</div>';
+      } else {
+        html += '<a class="detail__link" href="' + contribLink(p, 'corrigir') + '">Corrigir alguma informação ↗</a>';
+      }
       html += '<a class="detail__link" href="https://www.openstreetmap.org/?mlat=' + lat + '&mlon=' + lng + '#map=18/' + lat + '/' + lng + '" target="_blank" rel="noopener">Ver no OpenStreetMap ↗</a>';
       if (p.ceao_id) html += '<a class="detail__link detail__link--warm" href="https://terreiros.ceao.ufba.br/detalhe/' + p.ceao_id + '" target="_blank" rel="noopener">Ver no CEAO/UFBA ↗</a>';
-      html += '<a class="detail__link detail__link--warm" href="mailto:ileaxemap@gmail.com?subject=' + encodeURIComponent('Solicitação sobre registro no Ilê Axé Map — ' + getName(p)) + '">Este registro afeta sua comunidade? Solicitar correção ou retirada ↗</a>';
+      html += '<a class="detail__link detail__link--warm" href="' + contribLink(p, 'retirar') + '">Solicitar retirada deste registro ↗</a>';
       $('detail-body').innerHTML = html;
       $('detail').classList.add('open'); $('detail').setAttribute('aria-hidden', 'false'); $('detail-close').focus();
       if (!reduceMotion) map.flyTo([lat, lng], Math.max(map.getZoom(), 13), { duration: .6 });
@@ -802,7 +914,7 @@
           const haystack = ((getName(p) || '') + ' ' + (p.nacao || '') + ' ' + (p.municipio || '') + ' ' + (p.uf || '')).toLowerCase();
           if (!haystack.includes(q)) return false;
         }
-        return activeNacao.has(f.properties._nacao) && activeFonte.has(getFonteLabel(f.properties));
+        return activeTrad.has(f.properties._tradicao) && passaNacao(f.properties) && activeFonte.has(getFonteLabel(f.properties));
       });
     }
 
@@ -824,12 +936,12 @@
 
     function renderList(items) {
       const holder = $('rail-list');
-      if (items.length === 0) { holder.innerHTML = '<div class="rail__empty">Nenhum terreiro encontrado. <button type="button" class="rail__clear-btn" id="clear-search-btn">Limpar busca e filtros</button></div>'; var cb = $('clear-search-btn'); if (cb) cb.addEventListener('click', function() { $('search').value = ''; searchQuery = ''; activeNacao = new Set(categoryOrder); activeFonte = new Set(fonteOrder.filter(function(fnt) { return features.some(function(feat) { return getFonteLabel(feat.properties) === fnt; }); })); document.querySelectorAll('#filters input[type=checkbox]').forEach(function(c) { if (c.id !== 'all-nacao' && c.id !== 'all-fonte' && c.id !== 'hide-approx') c.checked = true; }); var an = document.getElementById('all-nacao'); if (an) an.checked = true; var af = document.getElementById('all-fonte'); if (af) af.checked = true; var ha = document.getElementById('hide-approx'); if (ha) ha.checked = true; hideApprox = true; updateMarkers(); updateList(); $('search').focus(); }); return; }
+      if (items.length === 0) { holder.innerHTML = '<div class="rail__empty">Nenhum terreiro encontrado. <button type="button" class="rail__clear-btn" id="clear-search-btn">Limpar busca e filtros</button></div>'; var cb = $('clear-search-btn'); if (cb) cb.addEventListener('click', function() { $('search').value = ''; searchQuery = ''; activeTrad = new Set(categoryOrder); activeNacao = new Set(nacaoOrder); activeFonte = new Set(fonteOrder.filter(function(fnt) { return features.some(function(feat) { return getFonteLabel(feat.properties) === fnt; }); })); document.querySelectorAll('#filters input[type=checkbox]').forEach(function(c) { if (c.id !== 'all-nacao' && c.id !== 'all-trad' && c.id !== 'all-fonte' && c.id !== 'hide-approx') c.checked = true; }); var at = document.getElementById('all-trad'); if (at) at.checked = true; var an = document.getElementById('all-nacao'); if (an) an.checked = true; var af = document.getElementById('all-fonte'); if (af) af.checked = true; var ha = document.getElementById('hide-approx'); if (ha) ha.checked = true; hideApprox = true; updateMarkers(); updateList(); $('search').focus(); }); return; }
       var html = '';
       items.forEach(function(f) {
         var p = f.properties;
         var name = escapeHtml(getName(p));
-        var meta = escapeHtml(p._nacao);
+        var meta = escapeHtml(rotuloTrad(p) + ' · ' + rotuloNacao(p));
         if (p.municipio) meta += ' · ' + escapeHtml(p.municipio);
         if (p.uf) meta += ' (' + escapeHtml(p.uf) + ')';
         var photo = '';
@@ -838,7 +950,7 @@
           if (src.indexOf('terreiros.ceao.ufba.br/_FT/pq/') !== -1) { var m = src.match(/\/pq\/(\d+)\./); if (m) src = 'data/ceao/fotos/' + m[1] + '_thumb.jpg'; }
           photo = '<img class="rail-item__photo" src="' + escapeHtml(src) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">';
         }
-        html += '<button class="rail-item" type="button" style="--item-color:' + nationColor(p._nacao) + '" aria-label="Abrir detalhes de ' + name + '"><span class="rail-item__dot"></span><span class="rail-item__body"><span class="rail-item__name">' + name + '</span><span class="rail-item__meta">' + meta + '</span></span>' + photo + '</button>';
+        html += '<button class="rail-item" type="button" style="--item-color:' + nationColor(p._tradicao) + '" aria-label="Abrir detalhes de ' + name + '"><span class="rail-item__dot"></span><span class="rail-item__body"><span class="rail-item__name">' + name + '</span><span class="rail-item__meta">' + meta + '</span></span>' + photo + '</button>';
       });
       holder.innerHTML = html;
       holder.querySelectorAll('.rail-item').forEach(function(item, idx) {
@@ -884,13 +996,13 @@
     // === Load ===
     map.whenReady(async function() {
       try {
-        const [geoResponse] = await Promise.all([fetch('data/v4_7/terreiros_nacional_v4_7.geojson')]);
+        const [geoResponse] = await Promise.all([fetch('data/v4_8/terreiros_nacional_v4_8.geojson')]);
         if (!geoResponse.ok) throw new Error('GeoJSON ' + geoResponse.status);
         const data = await geoResponse.json();
         $('dataset-total').textContent = data.features.length.toLocaleString('pt-BR') + ' registros';
         features = data.features
           .filter(f => f.geometry && f.geometry.type === 'Point' && Array.isArray(f.geometry.coordinates))
-          .map(f => ({ ...f, properties: { ...(f.properties || {}), _nacao: classify(f.properties || {}) } }));
+          .map(f => ({ ...f, properties: { ...(f.properties || {}), _tradicao: classify(f.properties || {}), _nacoes: nacoesOf(f.properties || {}) } }));
         buildFilters();
         addMapLayers();
         updateMarkers();
