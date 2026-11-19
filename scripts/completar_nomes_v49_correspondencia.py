@@ -78,7 +78,8 @@ def main():
         if not name or name.lower().startswith("(sem filtro"):
             continue
         conflicts = [s for s in byuni[key]
-                     if s.get("cnpj") != source.get("cnpj") and s.get("nome") != name]
+                     if same_coords(f, s)
+                     and s.get("cnpj") != source.get("cnpj") and s.get("nome") != name]
         if conflicts:
             continue
         if indexed[i]["properties"].get("recuperacao_status") not in ("pendente_revisao", "recuperado_fonte_cnpj"):
