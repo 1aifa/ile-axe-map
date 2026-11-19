@@ -37,6 +37,7 @@ jobs:
           rec=[x for x in f if x.get('properties',{}).get('recuperacao_status')=='recuperado_fonte_cnpj']
           pend=[x for x in f if x.get('properties',{}).get('recuperacao_status')=='pendente_revisao']
           assert (len(rec),len(pend)) == (1059,178)
+          assert len([x for x in rec if x['properties'].get('recuperacao_metodo')=='cep_e_coordenada_exclusivos_segunda_passagem'])==43
           ids=[x['properties']['entity_id'] for x in f if x['properties'].get('indice_v3') is not None]
           assert len(ids)==len(set(ids))==1237
           assert all(x['properties'].get('nome')!='Sem nome' for x in rec)
@@ -52,7 +53,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/v4_9_candidata/terreiros_nacional_v4_9_candidata.geojson
+          git add data/v4_9_candidata/terreiros_nacional_v4_9_candidata.geojson data/v4_9_candidata/antes_depois_1238.csv data/v4_9_candidata/destino_537.csv data/v4_9_candidata/pendencias_sem_chave.csv data/v4_9_candidata/auditoria_recuperacao.json
           if ! git diff --cached --quiet; then
             git commit -m "build: gerar v4.9 candidata auditada (nao publicada)"
             git push origin HEAD:correcao-nomes-auditoria-2026-11-19
