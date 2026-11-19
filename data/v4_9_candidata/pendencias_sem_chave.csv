@@ -1,0 +1,223 @@
+indice_v3_zero_based,fonte,cep,uf_v3,nome_antes,status,motivo
+1274,CNPJ,89253100,CE,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1294,CNPJ,08940000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1301,CNPJ,40020030,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1307,CNPJ,11740000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1324,CNPJ,35670000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1339,CNPJ,09540630,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1343,CNPJ,04416200,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1352,CNPJ,04372000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1364,CNPJ,06756010,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1365,CNPJ,96206480,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1366,CNPJ,86960000,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1367,CNPJ,18150000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1372,CNPJ,88805540,CE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1383,CNPJ,35501079,MG,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1400,CNPJ,03359000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1413,CNPJ,38480000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1448,CNPJ,38480000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1463,CNPJ,97650000,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1469,CNPJ,76829796,GO,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1482,CNPJ,27213200,RJ,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1514,CNPJ,15120000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1515,CNPJ,35367000,MG,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1516,CNPJ,82120030,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1519,CNPJ,81310415,PE,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1534,CNPJ,92990000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1546,CNPJ,81310415,PE,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1549,CNPJ,91560000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1555,CNPJ,09910120,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1561,CNPJ,36660000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1563,CNPJ,81250615,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1610,CNPJ,11740000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1658,CNPJ,02831000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1660,CNPJ,87033240,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1686,CNPJ,46170000,BA,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1696,CNPJ,13960000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1699,CNPJ,13960000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1713,CNPJ,58090200,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1717,CNPJ,13450232,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1723,CNPJ,40243370,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1732,CNPJ,06756010,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1744,CNPJ,02258000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1754,CNPJ,92500000,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1759,CNPJ,20770160,RJ,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1761,CNPJ,33200000,MG,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1793,CNPJ,11740000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1796,CNPJ,89805210,CE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1815,CNPJ,09540630,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1826,CNPJ,96180000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1890,CNPJ,13820000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1901,CNPJ,96750000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1910,CNPJ,06950000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1914,CNPJ,26510016,RJ,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1927,CNPJ,06900000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1937,CNPJ,13035610,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+1942,CNPJ,97400000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1969,CNPJ,11730000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1978,CNPJ,45989286,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+1979,CNPJ,13560642,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1982,CNPJ,46430000,BA,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+1985,CNPJ,13370000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2001,CNPJ,02739000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2008,CNPJ,13560970,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2045,CNPJ,03165000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2047,CNPJ,82510000,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2048,CNPJ,18605140,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2050,CNPJ,08940000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2051,CNPJ,13088150,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2053,CNPJ,13201032,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2055,CNPJ,09604000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2056,CNPJ,36660000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2059,CNPJ,09950000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2060,CNPJ,13611370,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2061,CNPJ,12903000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2071,CNPJ,01103020,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2072,CNPJ,42835000,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2074,CNPJ,23033150,RJ,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2077,CNPJ,02065000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2082,CNPJ,21746030,RJ,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2083,CNPJ,07846000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2084,CNPJ,13309000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2085,CNPJ,69098088,AC,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2087,CNPJ,02651130,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2088,CNPJ,96225000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2089,CNPJ,38400696,MG,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2090,CNPJ,11740000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2091,CNPJ,11370050,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2092,CNPJ,13050526,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2095,CNPJ,65110000,PI,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2097,CNPJ,02760010,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2098,CNPJ,13076130,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2099,CNPJ,20031120,RJ,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2101,CNPJ,07061000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2102,CNPJ,13216530,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2104,CNPJ,13050410,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2105,CNPJ,02936010,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2107,CNPJ,13309020,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2110,CNPJ,27960000,RJ,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2111,CNPJ,02258000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2112,CNPJ,03303000,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2113,CNPJ,02265002,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2116,CNPJ,11782626,SP,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2117,CNPJ,37955130,MG,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2118,CNPJ,80050470,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2134,CNPJ,42805200,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2151,CNPJ,81920740,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2155,CNPJ,13370000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2158,CNPJ,08210040,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2160,CNPJ,90010140,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2164,CNPJ,49097310,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2167,CNPJ,66080290,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2172,CNPJ,14050500,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2179,CNPJ,11730000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2182,CNPJ,04207001,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2184,CNPJ,56328330,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2191,CNPJ,91560000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2199,CNPJ,06900000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2202,CNPJ,56250000,PE,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2214,CNPJ,02731030,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2225,CNPJ,02739000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2254,CNPJ,08900000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2259,CNPJ,08900000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2287,CNPJ,14415000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2294,CNPJ,86720000,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2307,CNPJ,09170510,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2315,CNPJ,15150000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2350,CNPJ,95590000,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2351,CNPJ,04416200,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2377,CNPJ,35670000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2389,CNPJ,13990000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2391,CNPJ,81850040,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2393,CNPJ,02131050,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2407,CNPJ,81330480,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2420,CNPJ,41333040,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2446,CNPJ,88052200,CE,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2455,CNPJ,11740000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2462,CNPJ,83311710,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2465,CNPJ,99300000,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2487,CNPJ,13173380,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2497,CNPJ,42700130,BA,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2506,CNPJ,09910120,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2510,CNPJ,20541035,RJ,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2529,CNPJ,14415000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2550,CNPJ,13173380,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2582,CNPJ,04831050,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2586,CNPJ,83430000,PE,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2594,CNPJ,40820280,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2617,CNPJ,87040000,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2618,CNPJ,86075030,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2629,CNPJ,96750000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2632,CNPJ,46640000,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2647,CNPJ,08210040,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2648,CNPJ,13560970,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2649,CNPJ,44023365,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2657,CNPJ,68270000,AC,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2658,CNPJ,40220330,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2672,CNPJ,41900420,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2684,CNPJ,46430000,BA,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2713,CNPJ,03935060,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2769,CNPJ,49900000,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2776,CNPJ,86183500,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2781,CNPJ,13990000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2808,CNPJ,36770604,MG,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2832,CNPJ,04372000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2834,CNPJ,02731030,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2853,CNPJ,44380000,BA,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2854,CNPJ,55700000,PE,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2860,CNPJ,86803370,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2866,CNPJ,88521470,CE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2868,CNPJ,06950000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2875,CNPJ,48140000,BA,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2879,CNPJ,87025070,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2892,CNPJ,79006570,GO,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+2913,CNPJ,38120000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2919,CNPJ,96225000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2952,CNPJ,41620630,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+2963,CNPJ,02131050,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+2977,CNPJ,83430000,PE,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3049,CNPJ,02831000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3060,CNPJ,09811060,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3108,CNPJ,38120000,MG,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3114,CNPJ,42840050,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3116,CNPJ,04438000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3118,CNPJ,37940000,MG,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3127,CNPJ,13820000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3141,CNPJ,18150000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3147,CNPJ,13035510,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3157,CNPJ,81260270,PE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3161,CNPJ,05410001,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3183,CNPJ,03470000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3209,CNPJ,97400000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3224,CNPJ,96180000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3257,CNPJ,92990000,RS,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3279,CNPJ,17400000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3288,CNPJ,86807350,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3314,CNPJ,64260000,PI,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3316,CNPJ,13960000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3321,CNPJ,37800000,MG,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3338,CNPJ,13930000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3344,CNPJ,84046567,RN,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3352,CNPJ,85816010,CE,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3358,CNPJ,05410001,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3396,CNPJ,66033620,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3419,CNPJ,09602000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3440,CNPJ,06763330,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3453,CNPJ,06950000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3455,CNPJ,17400000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3466,CNPJ,40296120,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3468,CNPJ,13560642,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3470,CNPJ,04831050,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3494,CNPJ,65110000,PI,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3544,CNPJ,13450232,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3577,CNPJ,95560000,RS,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3600,CNPJ,11750000,SP,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3625,CNPJ,02936010,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3659,CNPJ,49700000,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3663,CNPJ,55700000,PE,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+3670,CNPJ,83280000,PE,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ
+3677,CNPJ,87033250,PI,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3678,CNPJ,46100498,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3699,CNPJ,49090580,BA,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ
+3710,CNPJ,06950000,SP,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3
+7488,Outro,,,Sem nome,PENDENTE,Fonte nao CNPJ sem chave de identidade

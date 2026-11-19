@@ -1,0 +1,30 @@
+{
+  "versao": "v4.9_candidata",
+  "data": "2026-11-19",
+  "fork": "1aifa/ile-axe-map",
+  "base_ref": "85d951501001d91901c3b60c4a6ed21fa651add3",
+  "main_snapshot": "a9b909230013ce37b24a0c91ebf617fabe7b102b",
+  "v3_total": 7755,
+  "sem_nome_exato_total_v3": 1238,
+  "sem_nome_cnpj_v3": 1237,
+  "sem_nome_outro_v3": 1,
+  "cnpj_nomes_recuperados": 1016,
+  "cnpj_pendentes": 221,
+  "pendencias_escopo_total": 222,
+  "outros_genericos_fora_escopo": {
+    "nao_informado_ceao": 66,
+    "terreiro_sem_nome_outro": 24
+  },
+  "v4_8_antes": 8036,
+  "cnpj_sem_nome_v4_8": 700,
+  "grupos_cnpg_simulados": 700,
+  "agrupamentos_indevidos": 537,
+  "v4_9_candidata_total": 8573,
+  "novas_identidades_reconstituidas": 1237,
+  "uf_divergente_com_fonte": 61,
+  "n_recuperados_entre_537": 426,
+  "n_pendentes_entre_537": 111,
+  "n_grupos_com_dois_nomes_recuperados_diferentes": 419,
+  "criterio": "CEP nao repetido na v3 + candidato unico por CEP no CSV CNPJ geocodificado + mesma coordenada (diferenca < 1e-5 graus) + nome preenchido + ausencia de conflito no CSV unificado",
+  "ressalva": "CEP e coordenadas podem compartilhar geocodificacao; recuperacao documental candidata, nao validacao comunitaria. UF original preservada e discrepancias indicadas. Nao publicar automaticamente."
+}
