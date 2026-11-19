@@ -46,10 +46,10 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1357,CNPJ,96200100,RS,RS,Sem nome,CENTRO ESPIRITA DE UMBANDA CRUZEIRO DO SUL,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1362,CNPJ,06322130,SP,SP,Sem nome,IGREJA DE UMBANDA PAI ARCANJO E XANGO SETE PEDREIRAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1363,CNPJ,38026050,MG,MG,Sem nome,TERREIRO DE JUREMA SAGRADA CABOCLO AKUAN,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1364,CNPJ,06756010,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1276,,false
+1364,CNPJ,06756010,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLAFLOR DO SOL,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1365,CNPJ,96206480,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,1357,,false
 1366,CNPJ,86960000,PI,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1366,,false
-1367,CNPJ,18150000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1367,,false
+1367,CNPJ,18150000,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA - PAI JOAQUIM DA LAGE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1367,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1368,CNPJ,31842505,MG,MG,Sem nome,AUEA - AGRUPAMENTO DE UMBANDA DA ESTRELA AZUL - TEMPLO DO SENHOR CABOCLO DA COBRA CORAL.,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1371,CNPJ,21380070,RJ,RJ,Sem nome,FEDERACAO BRASILEIRA DE UMBANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1333,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1372,CNPJ,88805540,CE,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1372,,false
@@ -76,7 +76,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1406,CNPJ,27145180,RJ,RJ,Sem nome,"ILE AXE OBAKOSSO, AYRA E OXUM",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1333,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1408,CNPJ,40715137,BA,BA,Sem nome,ILE AXE OMO OMIN TUNDE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1408,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1409,CNPJ,07987140,SP,SP,Sem nome,TEMPLO DE UMBANDA CACIQUE PENA BRANCA E MARIA BENEDITA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-1413,CNPJ,38480000,MG,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1413,,false
+1413,CNPJ,38480000,MG,MG,Sem nome,ASSOCIACAO UMBANDISTA TENDA DE UMBANDA LUZ DE ARUANDA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1413,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1414,CNPJ,07810510,SP,SP,Sem nome,TENDA DE UMBANDA PAI JOAQUIM DE ANGOLA E CABOCLO ROXO DA JUREMA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1414,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1415,CNPJ,06170230,SP,SP,Sem nome,NUCLEO DE UMBANDA SOLDADOS DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1415,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1419,CNPJ,13044125,SP,SP,Sem nome,NUCLEO DE UMBANDA E MAGIA DIVINA CABOCLO PENA DOURADA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -97,14 +97,14 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1444,CNPJ,01310200,SP,SP,Sem nome,COLEGIO DE UMBANDA SAGRADA PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1444,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1445,CNPJ,05849490,SP,SP,Sem nome,TENDA DE UMBANDA PAI PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1445,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1447,CNPJ,01513040,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM MENINO DA LIBERDADE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1447,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1448,CNPJ,38480000,MG,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1448,,false
+1448,CNPJ,38480000,MG,MG,Sem nome,TENDA DE UMBANDA VO MARIA DO ROSARIO,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1448,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1449,CNPJ,03921000,SP,SP,Sem nome,TERREIRO DE UMBANDA CABOCLO PENA BRANCA E DR. JOSE PILINTRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1450,CNPJ,21020360,RJ,RJ,Sem nome,ASSOCIACAO TEMPLO DE UMBANDA MISSIONARIOS ESTRELA DO ORIENTE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1450,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1452,CNPJ,08225360,SP,SP,Sem nome,TENDA DE UMBANDA AMOR E CARIDADE CABOCLO JUNQUIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1452,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1453,CNPJ,33120260,MG,MG,Sem nome,CENTRO ESPIRITA UMBANDA SENHORA DO MAR E XANGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1461,CNPJ,11720110,SP,SP,Sem nome,ASSOCIACAO CULTURAL DE ESTUDOS AFRO DECENDENTES - ACEAD,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1461,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1462,CNPJ,02875000,SP,SP,Sem nome,TEMPLO DE  UMBANDA VOVO CATARINA E CABOCLO ARRUDA DO JARDIM ELIZA MARIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-1463,CNPJ,97650000,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,1357,,false
+1463,CNPJ,97650000,RS,RS,Sem nome,CENTRO ESPIRITA DE UMBANDA MAE MARIA CONGA AFRICANA E PAI JOAQUIM,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1464,CNPJ,11712560,SP,SP,Sem nome,YAMI DO RECANTO DOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1464,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1467,CNPJ,88210000,CE,SC,Sem nome,TENDA DE UMBANDA OXOSSI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1467,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1468,CNPJ,02820090,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO PENA BRANCA DA BRASILANDIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -133,12 +133,12 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1509,CNPJ,95052270,RS,RS,Sem nome,ASSOCIACAO DE UMBANDA CAXIAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1509,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1511,CNPJ,03563080,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLO ARACACU E CABOCLO TAMANDARE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1513,CNPJ,44218000,BA,BA,Sem nome,TERREIRO TUMBALE JUNCARA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1513,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1514,CNPJ,15120000,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,1514,,false
+1514,CNPJ,15120000,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLO QUIRIMAN,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1514,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1515,CNPJ,35367000,MG,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1363,,false
 1516,CNPJ,82120030,PE,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1516,,false
 1517,CNPJ,14060110,SP,SP,Sem nome,TENDA DE UMBANDA BAIANO DE CANA VERDE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1517,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1518,CNPJ,88117750,CE,SC,Sem nome,TERREIRO DE UMBANDA CABOCLA JUREMINHA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1518,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1519,CNPJ,81310415,PE,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1519,,false
+1519,CNPJ,81310415,PE,PR,Sem nome,TENDA DE UMBANDA CANTO DO PAI JOAQUIM DE ANGOLA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1519,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1520,CNPJ,24417220,RJ,RJ,Sem nome,TERREIRO AFRO BRASILEIRO KISSANJARE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1520,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1521,CNPJ,03930310,SP,SP,Sem nome,CENTRO DE UMBANDA CABOCLA AURORA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1521,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1522,CNPJ,13090510,SP,SP,Sem nome,TENDA DE UMBANDA VOVO ANDREZA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -155,7 +155,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1544,CNPJ,12922670,SP,SP,Sem nome,TEMPLO NAGO ILE AXE OXUM E XANGO NETOS DE REI CONGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1544,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1545,CNPJ,85503230,CE,PR,Sem nome,CENTRO ESP DE UMBANDA REC DIV DE S JOAO M DE AGOSTINHO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1545,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1546,CNPJ,81310415,PE,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1516,,false
-1549,CNPJ,91560000,RS,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1549,,false
+1549,CNPJ,91560000,RS,RS,Sem nome,COMUNIDADE TRADICIONAL DE MATRIZ AFRICANA ILE EXU LOLA A TI OXUM FOLAKE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1549,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1554,CNPJ,90010241,RS,RS,Sem nome,CENTRO DE UMBANDA NOSSA SENHORA DOS NAVEGANTES,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1554,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1555,CNPJ,09910120,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1555,,false
 1556,CNPJ,99062385,RS,RS,Sem nome,CENTRO ESPIRITUALISTA DE UMBANDA GUERREIROS DA LUZ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1556,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -176,7 +176,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1601,CNPJ,35595000,MG,MG,Sem nome,TEMPLO DE UMBANDA CABANA DO PAI JOAO DE ARRUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1601,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1602,CNPJ,06124330,SP,SP,Sem nome,TEMPLO DE UMBANDA RAIO DOURADO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1606,CNPJ,06412150,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM SETE ESPADAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-1610,CNPJ,11740000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1610,,false
+1610,CNPJ,11740000,SP,SP,Sem nome,ILE AXE AIRA LOJO,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1610,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1611,CNPJ,12970000,SP,SP,Sem nome,TENDA DE UMBANDA BENEFICIENTE CABOCLO SETE FLECHAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1611,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1613,CNPJ,23894494,RJ,RJ,Sem nome,TERREIRO AFRO BRASILEIRO KWE ORUNIA OYA DY OGBE OKUTA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1333,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1614,CNPJ,93260140,RS,RS,Sem nome,ASSOCIACAO BENEFICIENTE E CULTURAL COMUNIDADE TRADICIONAL DE TERREIRO YLE YEMANJA & XANGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1614,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -243,7 +243,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1729,CNPJ,38065010,MG,MG,Sem nome,TENDA DE UMBANDA CABOCLO OXOSSI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1729,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1730,CNPJ,08580000,SP,SP,Sem nome,TEMPLO DE UMBANDA MAE MARIA CONGA E CABLOCO PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1731,CNPJ,03935040,SP,SP,Sem nome,TENDA DE UMBANDA CABLOCO CACIQUE PENA VERMELHA OGUM IAR,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1731,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1732,CNPJ,06756010,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1732,,false
+1732,CNPJ,06756010,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO CACHOEIRA DOURADA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1732,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1734,CNPJ,21765620,RJ,RJ,Sem nome,TEMPLO DE UMBANDA ESTRELA CONSOLADORA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1734,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1735,CNPJ,13347460,SP,SP,Sem nome,TENDA ESTRELA ESPIRITA DE UMBANDA OGUM SETE ONDAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1736,CNPJ,85555000,CE,PR,Sem nome,CENTRO ESPIRITA DE UMBANDA REINO DE OXALA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1736,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -251,7 +251,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1739,CNPJ,14060640,SP,SP,Sem nome,TENDA ESPIRITUAL DE UMBANDA ANAHI DO ORIENTE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1739,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1740,CNPJ,17025530,SP,SP,Sem nome,INST TENDA DE UMBANDA OGUM DO MAR E PRETO VELHO DO MAR,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1742,CNPJ,05535070,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-1744,CNPJ,02258000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1744,,false
+1744,CNPJ,02258000,SP,SP,Sem nome,TENDA DE UMBANDA ALVORECER,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1744,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1745,CNPJ,38401730,MG,MG,Sem nome,TENDA DE UMBANDA VO JULIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1746,CNPJ,09010160,SP,SP,Sem nome,TEMPLO DE UMBANDA TIAOZINHO DO MORRO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1746,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1747,CNPJ,97500330,RS,RS,Sem nome,ASSOCIACAO BENEFICIENTE INDEPENDENTE DE CULTOS AFROS-BRASILEIROS DE UMBANDAE QUINBANDA LUZ E CARIDADE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1747,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -259,7 +259,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1751,CNPJ,13323156,SP,SP,Sem nome,TENDA DE UMBANDA XANGO SETE PEDREIRAS E ZE PELINTRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1752,CNPJ,03557010,SP,SP,Sem nome,TENDA DE UMBANDA E CANDOMBLE OXOSSI GUERREIRO E MAMAE OXUM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1752,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1753,CNPJ,03809130,SP,SP,Sem nome,IRMANDADE DE UMBANDA OGUM ROMPE MATO E CAC PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-1754,CNPJ,92500000,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,1754,,false
+1754,CNPJ,92500000,RS,RS,Sem nome,TERREIRO DE UMBANDA E CANDOMBLE REI DA JUSTICA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1754,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1755,CNPJ,09581500,SP,SP,Sem nome,TEMPLO ESPIRITA DE UMBANDA CABOCLA GUACIRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1755,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1757,CNPJ,01218012,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO DA MATA DE CAMPOS ELISEOS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1757,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1759,CNPJ,20770160,RJ,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,1759,,false
@@ -289,7 +289,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1815,CNPJ,09540630,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1339,,false
 1821,CNPJ,06240040,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM MENINO E PAI OXALA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1821,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1824,CNPJ,02809000,SP,SP,Sem nome,TENDA DE UMBANDA IEMANJA OGUNTE E CABOCLO PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-1826,CNPJ,96180000,RS,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1826,,false
+1826,CNPJ,96180000,RS,RS,Sem nome,TENDA DOS ORIXAS,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1826,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1833,CNPJ,09691100,SP,SP,Sem nome,TENDA DE UMBANDA ALDEIA DO CABOCLO PENA AZUL,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1833,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1836,CNPJ,13300003,SP,SP,Sem nome,ROCA DE CANDOMBLE IILE AXE ALAKETU YIA WNGI OMIN ORUN AIYE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1836,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1839,CNPJ,13260000,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI OBALUAE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1839,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -339,7 +339,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1938,CNPJ,18301050,SP,SP,Sem nome,TEMPLO DE UMBANDA ESCUDO DE LUZ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1938,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1939,CNPJ,12286579,SP,SP,Sem nome,CENTRO DE UMBANDA VO CIPRIANO VO MARIA DO BALAIO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1941,CNPJ,32671294,MG,MG,Sem nome,TEMPLO DE UMBANDA LUZ DOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1941,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1942,CNPJ,97400000,RS,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1942,,false
+1942,CNPJ,97400000,RS,RS,Sem nome,SOCIEDADE BENEFICENTE ILE AXE OXUM E PANDA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1942,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1943,CNPJ,08411470,SP,SP,Sem nome,TENDA DE UMBANDA CASA DE OXUM CABOCLO PENA AZUL E BAIANA MARIA APARECIDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1944,CNPJ,21241220,RJ,RJ,Sem nome,TENDA DE UMBANDA AMIGOS DE NEGO VELHO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1944,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1948,CNPJ,60743236,CE,CE,Sem nome,CENTRO RELIGIOSO DE MATRIZ AFRICANA - YLE AXE JAKUTA OPARA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1948,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -353,7 +353,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 1963,CNPJ,09070060,SP,SP,Sem nome,TEMPLO DE UMBANDA MACHADO DO AMOR,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1963,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1965,CNPJ,22241091,RJ,RJ,Sem nome,CENTRO DE UMBANDA PAI JOAO DE ANGOLA EM COSME VELHO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1965,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1966,CNPJ,82860500,PE,PR,Sem nome,CENTRO DE UMBANDA UNIAO DOS POVOS CABOCLO SERRA NEGRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1966,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-1969,CNPJ,11730000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1969,,false
+1969,CNPJ,11730000,SP,SP,Sem nome,CENTRO DE CULTURA AFRO ILE ASE OGUN ONIRIN AYE - CABOCLO PENA BRANCA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1969,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 1970,CNPJ,03450000,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO ARARIBOIA E PAI JOAO TEMPLO TUCAPJ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1972,CNPJ,13163142,SP,SP,Sem nome,"ASSOCIACAO RELIGIOSA, CULTURAL, SOCIAL E BENEFICENTE DE TRADICOES AFRO BRASILEIRAS TENDA UMBANDA FILHOS DA VOVO SEBASTIANA E CABOCLO TUPI",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 1973,CNPJ,03978510,SP,SP,Sem nome,ILE AXE OPO IYA OLODOYDE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1973,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -401,7 +401,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2055,CNPJ,09604000,SP,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1700,,false
 2056,CNPJ,36660000,MG,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1561,,false
 2058,CNPJ,38051107,MG,MG,Sem nome,TENDA DE UMBANDA SAO CIPRIANO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-2059,CNPJ,09950000,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2059,,false
+2059,CNPJ,09950000,SP,SP,Sem nome,TEMPLO DE UMBANDA NATURAL,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2059,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2060,CNPJ,13611370,SP,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,2060,,false
 2061,CNPJ,12903000,SP,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,2061,,false
 2064,CNPJ,14025190,SP,SP,Sem nome,CEIA - CENTRO DE ESTUDOS E IRRADIACOES DE AUMBANDAN,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2064,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -462,7 +462,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2155,CNPJ,13370000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1985,,false
 2156,CNPJ,04270001,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLO DA MATA E ZE PILINTRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2156,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2157,CNPJ,04181100,SP,SP,Sem nome,TEMPLO ESPIRITUAL DE UMBANDA CABOCLO PENA VERDE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-2158,CNPJ,08210040,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1276,,false
+2158,CNPJ,08210040,SP,SP,Sem nome,TERREIRO AFRO BRASILEIRO OGUM MEGEGE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2159,CNPJ,13045541,SP,SP,Sem nome,COMUNIDADE DA TRADICAO E CULTO AFRO-ILESIN OGUM LAKAYIE OSINMOLE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2160,CNPJ,90010140,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2160,,false
 2161,CNPJ,06700283,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI JERONIMO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2161,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -479,11 +479,11 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2178,CNPJ,02319030,SP,SP,Sem nome,CONFEDERACAO NACIONAL DE UMBANDA E CANDOMBLE E ENTIDADES DE CULTOS AOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2179,CNPJ,11730000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2179,,false
 2180,CNPJ,06720050,SP,SP,Sem nome,INSTITUTO ESPIRITUAL XAMANICO UMBANDALUZ CEU NOSSA SENHORA DA CONCEICAO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2180,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2182,CNPJ,04207001,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,1879,,false
+2182,CNPJ,04207001,SP,SP,Sem nome,TEMPLO LUZ AMETRINO DE UMBANDA SAGRADA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1879,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2184,CNPJ,56328330,PE,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1516,,false
 2185,CNPJ,11013470,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA NOSSA SENHORA DA CONCEICAO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2185,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2190,CNPJ,12424090,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO SETE LUA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-2191,CNPJ,91560000,RS,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1549,,false
+2191,CNPJ,91560000,RS,RS,Sem nome,COMUNIDADE TRADICIONAL DE MATRIZ AFRICANA ILE EXU LOLA A TI OXUM FOLAKE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1549,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2192,CNPJ,35675000,MG,MG,Sem nome,CENTRO AFRO-BRASILEIRO NZO ATIM OIA ODERIM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2192,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2195,CNPJ,08285240,SP,SP,Sem nome,"TENDA DE UMBANDA PAI XANGO, IANSA, VO MARIA, CABOCLO SETE PEDREIRAS E CABOCLO SETE FLECHAS",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2195,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2197,CNPJ,04658240,SP,SP,Sem nome,NUCLEO DE UMBANDA BOIADEIRO DOS TRES LACOS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2197,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -508,11 +508,11 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2249,CNPJ,07084370,SP,SP,Sem nome,TENDA DE UMBANDA CACIQUE PENA BRANCA E PAI JOAQUIM DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2249,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2250,CNPJ,96540000,RS,RS,Sem nome,TEMPLO ESCOLA DE UMBANDA CAVALEIROS DA JUREMA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2250,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2251,CNPJ,11015505,SP,SP,Sem nome,TENDA DE UMBANDA FILHOS DE OXALA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2251,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2254,CNPJ,08900000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2254,,false
+2254,CNPJ,08900000,SP,SP,Sem nome,TENDA DE UMBANDA MAE TEREZA - CASA DE OGUM E IANSA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2254,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2255,CNPJ,59280000,PE,RN,Sem nome,TERREIRO CASA DO OURO AGUAS DE OXUM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2255,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2257,CNPJ,07729535,SP,SP,Sem nome,ALDEIA DE UMBANDA YANSA E OGUM DE RONDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2257,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2258,CNPJ,04932400,SP,SP,Sem nome,TENDA DE UMBANDA VOVO BARBINA E CABOCLO ARARIBOIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-2259,CNPJ,08900000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2259,,false
+2259,CNPJ,08900000,SP,SP,Sem nome,TENDA DE UMBANDA PAI BENTINHO DE GUARAREMA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2259,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2260,CNPJ,13972210,SP,SP,Sem nome,TERREIRO DE UMBANDA CABOCLO PENA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2261,CNPJ,81830280,PE,PR,Sem nome,ASSOCIACAO TERREIRO DE UMBANDA VOVO CATARINA DAS ALMAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2261,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2264,CNPJ,13238720,SP,SP,Sem nome,TEMPLO DE UMBANDA ROCA DO BOIADEIRO AMARO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -542,7 +542,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2311,CNPJ,63024340,CE,CE,Sem nome,ASSOCIACAO CARIRIENSE DE JUREMA UMBANDA E CANDOMBLE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2311,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2312,CNPJ,03105120,SP,SP,Sem nome,TENDA DE UMBANDA DE TODOS OS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2312,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2314,CNPJ,24933565,RJ,RJ,Sem nome,TEMPLO DE UMBANDA DA SAGRADA UNIAO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1333,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-2315,CNPJ,15150000,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2315,,false
+2315,CNPJ,15150000,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLO COBRA CORAL,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2315,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2319,CNPJ,09521140,SP,SP,Sem nome,CENTRO DE UMBANDA MARIA ROSA DO CATIMBO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2319,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2320,CNPJ,91770540,RS,RS,Sem nome,ILE AXE NAGO KOBI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2320,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2321,CNPJ,06766030,SP,SP,Sem nome,TEMPLO DE UMBANDA E CANDOMBLE OGUN E OYA E MARIA FEITICEIRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2321,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -560,7 +560,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2346,CNPJ,03655030,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLO GIRASSOL E EXU REI DAS 7 ENCRUZILHADAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2346,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2347,CNPJ,13903050,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO SETE FLECHAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2349,CNPJ,91520360,RS,RS,Sem nome,COMUNIDADE TERREIRA ILE AXE YEMONJA OMI OLODO E C.E.U. CACIQUE TUPINAMBA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2350,CNPJ,95590000,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2350,,false
+2350,CNPJ,95590000,RS,RS,Sem nome,CENTRO DE UMBANDA A LUZ DE DEUS,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2350,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2351,CNPJ,04416200,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1276,,false
 2352,CNPJ,11431140,SP,SP,Sem nome,GRUPO ESPIRITUALISTA E UMBANDA SAGRADA MISSIONARIOS DA LUZ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2352,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2353,CNPJ,15075200,SP,SP,Sem nome,UNIAO ESPIRITA DE UMBANDA CACIQUE DA MATA VIRGEM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2353,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -584,7 +584,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2383,CNPJ,14030549,SP,SP,Sem nome,TEMPLO DE UMBANDA ILE AXE OBA MENAN,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2385,CNPJ,99700274,RS,RS,Sem nome,CENTRO ESPIRITA DE UMBANDA REINO DE OXALA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2385,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2388,CNPJ,94818100,RS,RS,Sem nome,CENTRO DE UMBANDA XANGO FRATERNIDADE RAINHA DO MAR,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2388,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2389,CNPJ,13990000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2389,,false
+2389,CNPJ,13990000,SP,SP,Sem nome,CENTRO COMUNITARIO DE ESTUDO E PRATICA DA CULTURA AFRO-BRAS.PAI OXALA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2389,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2390,CNPJ,90690110,RS,RS,Sem nome,CENTRO ESPIRITA DE UMBANDA LUZ E CARIDADE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2390,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2391,CNPJ,81850040,PE,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1516,,false
 2393,CNPJ,02131050,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2393,,false
@@ -621,14 +621,14 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2437,CNPJ,03182040,SP,SP,Sem nome,TEMPLO DE UMBANDA FRATERNIDADE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1442,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2438,CNPJ,94824380,RS,RS,Sem nome,CENTRO DE UMBANDA AFRICANO DE OGUM E IEMANJA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2439,CNPJ,05033001,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM BEIRA MAR DA LAPA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2439,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2446,CNPJ,88052200,CE,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2446,,false
+2446,CNPJ,88052200,CE,SC,Sem nome,TENDA DE UMBANDA PAI JOAO DO CRUZEIRO LTDA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2446,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2448,CNPJ,90050101,RS,RS,Sem nome,TEMPLO DE UMBANDA UNIAO DA LUZ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2448,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2454,CNPJ,08693050,SP,SP,Sem nome,ILE AXE OXUM OPARA E CABOCLA JUREMA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2455,CNPJ,11740000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1307,,false
 2456,CNPJ,03660040,SP,SP,Sem nome,TEMPLO DE UMBANDA VO FRANCISCA E INDIA MORENA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1441,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2460,CNPJ,08420610,SP,SP,Sem nome,TEMPLO DE UMBANDA IRMANDADE DE OXUM E XANGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2460,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2462,CNPJ,83311710,PE,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1516,,false
-2465,CNPJ,99300000,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2465,,false
+2465,CNPJ,99300000,RS,RS,Sem nome,CENTRO DE UMBANDA AGUAS DE IEMANJA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2465,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2468,CNPJ,04160001,SP,SP,Sem nome,ESPACO DE UMBANDA OGUM DE RONDA E VO MARIA DE ANGOLA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2468,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2470,CNPJ,04419160,SP,SP,Sem nome,"TENDA DE UMBANDA CABOCLO FLECHA DOURADA, MAE OXUM E PAI BENEDITO",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2477,CNPJ,28540000,RJ,RJ,Sem nome,CENTRO ESPIRITA DE UMBANDA CANTINHO DE PAI OXALA DA GUIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2477,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -715,7 +715,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2641,CNPJ,90440190,RS,RS,Sem nome,CENTRO ESPIRITA DE UMBANDA JANDAYA MIRIM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2641,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2642,CNPJ,96755000,RS,RS,Sem nome,CENTRO ESPIRITA DE UMBANDA CACIQUE MANOEL BOTAFOGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2642,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2646,CNPJ,04751010,SP,SP,Sem nome,ASSOCIACAO DO CULTO AFRO BRASILEIRO EGBARA - VODUM BARA ALODE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2646,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2647,CNPJ,08210040,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2647,,false
+2647,CNPJ,08210040,SP,SP,Sem nome,TERREIRO DE OXUM OPARA BISNETA TOMBENCI FE E RAZAO,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2647,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2648,CNPJ,13560970,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2008,,false
 2649,CNPJ,44023365,BA,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,2649,,false
 2650,CNPJ,26230330,RJ,RJ,Sem nome,FRATERNIDADE ESPIRITUALISTA DE UMBANDA FEU,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2650,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -776,7 +776,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2776,CNPJ,86183500,PI,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1366,,false
 2778,CNPJ,92728550,RS,RS,Sem nome,ASSOCIACAO ILE AFRO UMBANDISTA IANSA E XANGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2780,CNPJ,06784150,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI XANGO E NEGRO THOMAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-2781,CNPJ,13990000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2781,,false
+2781,CNPJ,13990000,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA CABOCLO PENA VERDE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2781,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2782,CNPJ,12850000,SP,SP,Sem nome,CASA DE UMBANDA PAI OXALA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2782,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2784,CNPJ,81510460,PE,PR,Sem nome,SOCIEDADE ESPIRITUALISTA LUZ DOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2784,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2787,CNPJ,05801000,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM MEGE E MAE IEMANJA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2787,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -807,7 +807,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2847,CNPJ,03175050,SP,SP,Sem nome,GRUPO DE UMBANDA CASA DE OGUM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2849,CNPJ,01541030,SP,SP,Sem nome,ADE CASA DOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2849,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2853,CNPJ,44380000,BA,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,2853,,false
-2854,CNPJ,55700000,PE,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2854,,false
+2854,CNPJ,55700000,PE,PE,Sem nome,ORGANIZACAO RELIGIOSA AFRO-INDIGENA TERREIRO DE OGUN - TRADICAO NAGO,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2854,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2855,CNPJ,40313360,BA,BA,Sem nome,ILE AXE IJINO ILU OROSSI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2855,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2856,CNPJ,18025120,SP,SP,Sem nome,TENDA DE UMBANDA FRANSCISCO DE ASSIS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2856,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2858,CNPJ,03154000,SP,SP,Sem nome,TENDA DE UMBANDA CANSUA DE PRETO  MANOEL DO CONGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2858,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -877,7 +877,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 2969,CNPJ,13105010,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI KAIUZA - CAMINHO DA LUZ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2972,CNPJ,06780120,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI XANGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2976,CNPJ,14810320,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA CABOCLO OGUM ROMPE MATO E ZE PILINTRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2595,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-2977,CNPJ,83430000,PE,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2977,,false
+2977,CNPJ,83430000,PE,PR,Sem nome,TENDA DE UMBANDA E CANDOMBLE ILE AXE ODE AQUAERAN,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2977,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2978,CNPJ,04272000,SP,SP,Sem nome,TEMPLO UMBANDISTA ESTRELA DOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2978,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 2983,CNPJ,20710230,RJ,RJ,Sem nome,CASA DE CARIDADE DE UMBANDA - ENGENHO NOVO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1333,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 2987,CNPJ,81070150,PE,PR,Sem nome,FEDERACAO DOS CULTOS AFROS DE UMBANDA E CANDOMBLE DO BRASIL,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2987,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -956,7 +956,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3136,CNPJ,04904220,SP,SP,Sem nome,TENDA DE UMBANDA PAI OGUM ROMPE MATO E CABOCLA JACIARA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3138,CNPJ,14807380,SP,SP,Sem nome,ASSOCIACAO TERREIRO DE UMBANDA PAI JOAO DA CARIDADE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3139,CNPJ,04676070,SP,SP,Sem nome,TEMPLO DE UMBANDA MAE IRACEMA DE OXOSSI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3139,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3141,CNPJ,18150000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,3141,,false
+3141,CNPJ,18150000,SP,SP,Sem nome,TEMPLO DE UMBANDA OXOSSE CACADOR DO CAMPO VERDE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3141,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3142,CNPJ,02535010,SP,SP,Sem nome,TENDA DE UMBANDA OGUM CABOCLA JUREMA DA MATA E PAI JOAO DE ANGOLA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3143,CNPJ,09572250,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLO PELE VERMELHA E MAMAE OXUM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3145,CNPJ,11355480,SP,SP,Sem nome,O GRANDE ORIENTE DE UMBANDA BRANCA DO ESTADO DE S PAULO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3145,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -972,7 +972,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3157,CNPJ,81260270,PE,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1516,,false
 3159,CNPJ,07230350,SP,SP,Sem nome,ROCA DE CANDOMBLE DO CABOCLO SULTAO DA MATA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3159,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3160,CNPJ,38414488,MG,MG,Sem nome,TENDA DE UMBANDA PAI OXALA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-3161,CNPJ,05410001,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,3161,,false
+3161,CNPJ,05410001,SP,SP,Sem nome,UNIAO DE TENDAS DE UMBANDA E CANDOMBLE DO BRASIL,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3161,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3162,CNPJ,08431430,SP,SP,Sem nome,TERREIRO DE UMBANDA CABOCLO SETE FLECHAS E ZE BAIANINHO DAS CANDEIAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3164,CNPJ,13481582,SP,SP,Sem nome,TENDA DE UMBANDA 7 FLECHAS D'OXOSSI E MAE YEMANJA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3165,CNPJ,25805000,RJ,RJ,Sem nome,CENTRO ESPIRITA E UMBANDA VOVO BENEDITO DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1333,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -995,12 +995,12 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3200,CNPJ,03562050,SP,SP,Sem nome,TENDA DE UMBANDA PAI XANGO E VOVO CATARINA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3203,CNPJ,02324140,SP,SP,Sem nome,TENDA DE UMBANDA CAMINHEIROS DE OXOSSI E OXUM DO CABOCLO JUREMEIRO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3205,CNPJ,05724005,SP,SP,Sem nome,TERREIRO DE UMBANDA CRUZEIRO DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3205,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3209,CNPJ,97400000,RS,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,3209,,false
+3209,CNPJ,97400000,RS,RS,Sem nome,TENDA ESPIRITA DE UMBANDA NOSSA SENHORA DA PIEDADE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3209,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3212,CNPJ,13205190,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO JURENEI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3212,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3215,CNPJ,34505970,MG,MG,Sem nome,ASSOCIACAO COMUNIDADE TRADICIONAL DE MATRIZ AFRICANA MANZU INKISSI TARIANZAZE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1363,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3217,CNPJ,08710620,SP,SP,Sem nome,TENDA DE UMBANDA PAI JOAQUIM DE ANGOLA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3217,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3220,CNPJ,23560352,RJ,RJ,Sem nome,CENTRO DE UMBANDA JANAINA BABA - CABOCLO AYMORE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3220,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3224,CNPJ,96180000,RS,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1826,,false
+3224,CNPJ,96180000,RS,RS,Sem nome,TERREIRO DE ESTUDOS E CULTO ESPIRITA E UMBANDISTA - TECEU,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,1826,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3235,CNPJ,21745400,RJ,RJ,Sem nome,CENTRO DE UMBANDA E AFRICANO - CANTINHO DOS ORIXAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3235,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3236,CNPJ,96207662,RS,RS,Sem nome,CENTRO TEOLOGICO DE UMBANDA LUZ DIVINA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3236,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3241,CNPJ,02940080,SP,SP,Sem nome,TEMPLO DE UMBANDA CAMINHOS DE LUZ/MAE JOAQUINA E PAI XANGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -1041,7 +1041,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3316,CNPJ,13960000,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,1696,,false
 3318,CNPJ,02533010,SP,SP,Sem nome,TEMPLO DE UMBANDA ALDEIA DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3318,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3320,CNPJ,03734010,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM E OBALUAE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-3321,CNPJ,37800000,MG,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,3321,,false
+3321,CNPJ,37800000,MG,MG,Sem nome,TERREIRO DE UMBANDA ESTRELA GUIA CRUZEIRO DE LUZ DE GUAXUPE MINAS GERAIS,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3321,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3322,CNPJ,16208015,SP,SP,Sem nome,TENDA DE UMBANDA OMULU OBALOAE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3322,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3325,CNPJ,03363080,SP,SP,Sem nome,TEMPLO DE UMBANDA E CASA DE CARIDADE PAI BENEDITO DE ARUANDA E VO MARIA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,2688,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3330,CNPJ,62800000,CE,CE,Sem nome,TERREIRO UMBANDA DE CABOCLO JOSE MARIA E MARIANA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3330,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -1049,7 +1049,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3335,CNPJ,03637000,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLA SETE LUAS E OGUM MARINHO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3336,CNPJ,03156205,SP,SP,Sem nome,INSTITUTO CULTURAL AFRO BRASILEIRO TERREIRO DE SAO MIGUEL,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3337,CNPJ,21321340,RJ,RJ,Sem nome,UNIAO UMBANDISTA DOS CULTOS AFRO BRASILEIRO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3337,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3338,CNPJ,13930000,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,3338,,false
+3338,CNPJ,13930000,SP,SP,Sem nome,TENDA DE UMBANDA PAI ANASTACIO,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3338,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3339,CNPJ,93020620,RS,RS,Sem nome,SOCIEDADE DE UMBANDA CACIQUE HAITU,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3339,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3340,CNPJ,96835100,RS,RS,Sem nome,UNIAO CANDOMBLECISTA UMBANDISTA E AFRICANISTA DO VALE DO RIO PARDO E TAQUARI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3340,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3342,CNPJ,13454422,SP,SP,Sem nome,CENTRO ESPIRITA CABOCLO PENA BRANCA E A SETE LINHAS DA UMBANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3342,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -1064,7 +1064,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3353,CNPJ,09060020,SP,SP,Sem nome,CASA DE CARIDADE DE UMBANDA DE PAI JOAQUIM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3355,CNPJ,61945010,CE,CE,Sem nome,"FEDERACAO NACIONAL DE UMBANDA, REZADORES E CURADORES DO ESTADO DO CEARA",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3355,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3357,CNPJ,64076410,PI,PI,Sem nome,CONGREGACAO ESPIRITA DE UMBANDA E CAND DE TERESINA PI,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3358,CNPJ,05410001,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,3161,,false
+3358,CNPJ,05410001,SP,SP,Sem nome,ASSOCIACAO BEN.EDUC.E REC.DE UMBANDA'VALE DOS ORIXAS',RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3161,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3360,CNPJ,18060030,SP,SP,Sem nome,SOCIEDADE ESPIRITA E DE UMBANDA BOM PASTOR,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3360,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3361,CNPJ,15040500,SP,SP,Sem nome,CENTRO DE UMBANDA DO PAI JOSE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3362,CNPJ,02313000,SP,SP,Sem nome,SOLAR ESPIRITUAL UMBANDA INDEPENDENTE PASCHOAL SOMMA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3362,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -1098,7 +1098,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3413,CNPJ,04324050,SP,SP,Sem nome,"TEMPLO DE UMBANDA CABOCLOS TUPINAMBA, SULTAO DAS MATAS E UBIRAJARA.",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3415,CNPJ,02650070,SP,SP,Sem nome,TERREIRO REAL DE ZE PILINTRA E PAI BENEDITO DE ANGOLA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3415,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3416,CNPJ,03389010,SP,SP,Sem nome,CENTRO DE UMBANDA FORCA DIVINA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3416,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3419,CNPJ,09602000,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,3419,,false
+3419,CNPJ,09602000,SP,SP,Sem nome,ESPACO DE UMBANDA CABOCLO VENTANIA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3419,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3421,CNPJ,59225000,PE,RN,Sem nome,CENTRO ESPIRITA DE UMBANDA PAI JOAQUIM DE ANGOLA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1898,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3424,CNPJ,12524815,SP,SP,Sem nome,ROCA DE CANDOMBLE KWE CEJA TOGUN OMIN DAN,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3424,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3425,CNPJ,06194090,SP,SP,Sem nome,CASA DE ORACAO TENDA DE UMBANDA CABOCLO UBIRAJARA E BAIANO PEDRO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -1128,7 +1128,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3487,CNPJ,13101163,SP,SP,Sem nome,TERREIRO UMBANDISTA CABOCLO SETE FLECHAS DE CAMPINAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3489,CNPJ,03678070,SP,SP,Sem nome,TENDA DE UMBANDA CABOCLA JUREMA E RECANTO DA OXUM,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3493,CNPJ,05201200,SP,SP,Sem nome,TEMPLO DE UMBANDA OGUM MEGE E IANSA ONIRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-3494,CNPJ,65110000,PI,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2095,,false
+3494,CNPJ,65110000,PI,MA,Sem nome,TERREIRO DE UMBANDA SAGRADA IRMAOS NA CARIDADE LUZ E VIDA DE OXALA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2095,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3496,CNPJ,13256717,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA CABOCLO ARAUNA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3496,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3497,CNPJ,03627180,SP,SP,Sem nome,INSTITUTO CULTURAL AFRO CABOCLO INCAFRO ILE  ASE OMO L OKUN,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3498,CNPJ,95630000,RS,RS,Sem nome,TEMPLO ESCOLA DE UMBANDA SAGRADA LUZEIROS DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3498,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -1168,7 +1168,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3567,CNPJ,20541172,RJ,RJ,Sem nome,CASA DE CARIDADE E ESTUDO DE UMBANDA CABOCLO PEDRA BRANCA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3567,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3571,CNPJ,99708570,RS,RS,Sem nome,TEMPLO DE UMBANDA VOZES DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1357,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3572,CNPJ,95595000,RS,RS,Sem nome,CENTRO ESPIRITA UMBANDA RAIO DE LUZ - CERLUZ,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3572,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3577,CNPJ,95560000,RS,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,3577,,false
+3577,CNPJ,95560000,RS,RS,Sem nome,ASSOCIACAO ESPIRITUALISTA DE UMBANDA E CULTOS AFRO LUZ E CARIDADE,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3577,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3578,CNPJ,15046437,SP,SP,Sem nome,ASSOCIACAO TEMPLO DE UMBANDA SETE RAIZES DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3578,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3581,CNPJ,20775090,RJ,RJ,Sem nome,CENTRO DE UMBANDA GUERREIROS DE OGUM - CUGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3581,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3585,CNPJ,08275460,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI OXOSSI E BAIANO SEVERINO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -1182,7 +1182,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3596,CNPJ,40015110,BA,BA,Sem nome,ASSOCIACAO AFRO-BRASILEIRA CASA DO MENSAGEIRO TERREIRO ILE AXE OJISE OLODUMARE,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3596,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3598,CNPJ,13240000,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO DA MATA DE JARINU,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3598,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3599,CNPJ,06728150,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLO CACADOR E IANSA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-3600,CNPJ,11750000,SP,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,3600,,false
+3600,CNPJ,11750000,SP,SP,Sem nome,TERREIRO DE UMBANDA PAI TOMAS E BAIANO JESUINO,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3600,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3603,CNPJ,12238000,SP,SP,Sem nome,NUCLEO DE UMBANDA SAGRADA SAO JOSE DOS CAMPOS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3603,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3604,CNPJ,69063060,AC,AM,Sem nome,ASSOCIACAO DE MATRIZ AFRICANA NAVEZUARINA DO AMAZONAS - AMANAM - NACAO JEJE-NAGO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3604,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3605,CNPJ,14307156,SP,SP,Sem nome,TENDA DE UMBANDA  NOSSA SENHORA DA CONCEICAO - CABLOCO TUPINAMBA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
@@ -1190,7 +1190,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3619,CNPJ,02243010,SP,SP,Sem nome,TERREIRO DE UMBANDA SAGRADA VOVO BENTINHA DO CONGA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1435,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3623,CNPJ,97030060,RS,RS,Sem nome,TEMPLO DE UMBANDA OGUM 7 ESPADAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3623,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3624,CNPJ,02971000,SP,SP,Sem nome,TEMPLO DE UMBANDA LIRIO BRANCO - FILHOS VOVO CATARINA DE ANGOLA E MESTRE ZE PELINTRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
-3625,CNPJ,02936010,SP,,Sem nome,Sem nome,PENDENTE,CEP repetido entre registros sem nome da v3,2105,,false
+3625,CNPJ,02936010,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI OXALA E MARTIN PESCADOR,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,2105,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3626,CNPJ,08473050,SP,SP,Sem nome,TEMPLO ESPIRITUAL DE UMBANDA MENSAGEIROS DE OXALA E MAE LIRA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3627,CNPJ,13277050,SP,SP,Sem nome,"TERREIRO DE UMBANDA CARIDADE, PAZ E AMOR",RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3627,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3633,CNPJ,11325040,SP,SP,Sem nome,CENTRO ESPIRITA DE UMBANDA SANTO ANTONIO,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3633,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
@@ -1214,7 +1214,7 @@ indice_v3_zero_based,fonte,cep,uf_v3,uf_fonte_cnpj,nome_antes,nome_depois,status
 3667,CNPJ,04304010,SP,SP,Sem nome,TENDA DE UMBANDA 7 RAIOS DE LUZ DE IANSA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3667,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3668,CNPJ,02135000,SP,SP,Sem nome,TEMPLO DE UMBANDA CABOCLA JUPIRA E CABOCLO MOURA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1477,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3669,CNPJ,23540120,RJ,RJ,Sem nome,TERREIRO DAS TERRAS SANTAS,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3669,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
-3670,CNPJ,83280000,PE,,Sem nome,Sem nome,PENDENTE,CEP nao identifica um unico registro no CSV CNPJ,3670,,false
+3670,CNPJ,83280000,PE,PR,Sem nome,TERREIRO DE UMBANDA PRETOS VELHOS DE ARUANDA,RECUPERADO,CEP e coordenadas exclusivos na fonte e em todos os CNPJ v3; CEP isoladamente nao era unico,3670,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3671,CNPJ,95905770,RS,RS,Sem nome,TEMPLO ESCOLA DE UMBANDA PAI JOAQUIM DE ANGOLA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,3671,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,true
 3672,CNPJ,08270010,SP,SP,Sem nome,TEMPLO DE UMBANDA PAI OMOLU MAE IANSA E V0 JOSE DE ARUANDA,RECUPERADO,Identificador CEP unico na v3 e fonte CNPJ; coordenadas coincidentes,1276,data/cnpj/geocoding/terreiros_cnpj_geocoded.csv,false
 3677,CNPJ,87033250,PI,,Sem nome,Sem nome,PENDENTE,coordenadas divergentes da fonte CNPJ,1366,,false
