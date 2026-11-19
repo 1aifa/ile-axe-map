@@ -55,7 +55,7 @@ def run():
         elif len(items)!=1:why="CEP nao identifica um unico registro no CSV CNPJ"
         else:
             source=items[0];coords=f["geometry"]["coordinates"]
-            if abs(float(source["lng"])-coords[0])>1e-5 or abs(float(source["lat"])-coords[1])>1e-5:
+            if not source.get("lng") or not source.get("lat") or abs(float(source["lng"])-coords[0])>1e-5 or abs(float(source["lat"])-coords[1])>1e-5:
                 why="coordenadas divergentes da fonte CNPJ"
             else:
                 name=(source.get("razao_social") or source.get("nome_fantasia") or "").strip()
