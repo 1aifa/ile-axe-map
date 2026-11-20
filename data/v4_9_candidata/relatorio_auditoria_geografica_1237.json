@@ -1,0 +1,182 @@
+{
+  "dataset": "Ilê Axé Map v4.9 candidata, lote CNPJ recuperado",
+  "data": "2026-11-19",
+  "registros_auditados": 1237,
+  "nomes_documentais_atribuidos": 1237,
+  "status_nomes_religiosos_de_uso": "pendentes de validação da casa",
+  "coordenadas_exatas_comprovadas_em_campo": 0,
+  "observacao": "0 significa nenhuma validação de campo comprovada por esta auditoria; não significa que todas as localizações estejam erradas",
+  "alertas_nao_exclusivos": {
+    "GEOCODIFICACAO_APROXIMADA": 275,
+    "GEOCODIFICACAO_EM_POI_NAO_CONFIAVEL": 345,
+    "MAPA_DIVERGE_DA_FONTE": 54,
+    "MESMO_PONTO_PARA_CEPS_DISTINTOS": 422,
+    "PRECISAO_DESCONHECIDA": 43,
+    "SEM_COORDENADA_NA_FONTE": 43,
+    "UF_DIVERGE_DA_FONTE": 105
+  },
+  "geocodificacao_precisao_na_fonte": {
+    "administrative": 45,
+    "artwork": 7,
+    "ausente": 43,
+    "bank": 2,
+    "city_block": 5,
+    "construction": 1,
+    "electronics": 1,
+    "farm": 1,
+    "guest_house": 2,
+    "hamlet": 2,
+    "hotel": 1,
+    "house": 53,
+    "living_street": 2,
+    "musical_instrument": 300,
+    "neighbourhood": 7,
+    "pedestrian": 3,
+    "place_of_worship": 3,
+    "postal_code": 2,
+    "postcode": 177,
+    "primary": 13,
+    "residential": 383,
+    "restaurant": 2,
+    "seafood": 27,
+    "secondary": 43,
+    "service": 2,
+    "suburb": 35,
+    "supermarket": 1,
+    "tertiary": 65,
+    "town": 1,
+    "track": 1,
+    "trunk": 2,
+    "unclassified": 3,
+    "village": 1,
+    "wood": 1
+  },
+  "registros_prioridade_critica": 566,
+  "registros_prioridade_revisar": 671,
+  "maiores_clusters_fonte": [
+    {
+      "longitude": -46.6391624,
+      "latitude": -23.5383214,
+      "registros": 300,
+      "ceps_distintos": 296
+    },
+    {
+      "longitude": -49.4455477,
+      "latitude": -18.9921507,
+      "registros": 35,
+      "ceps_distintos": 35
+    },
+    {
+      "longitude": -43.2473425,
+      "latitude": -22.8565739,
+      "registros": 27,
+      "ceps_distintos": 27
+    },
+    {
+      "longitude": -52.841286,
+      "latitude": -28.731201,
+      "registros": 26,
+      "ceps_distintos": 26
+    },
+    {
+      "longitude": -40.8544709,
+      "latitude": -14.8570284,
+      "registros": 14,
+      "ceps_distintos": 14
+    },
+    {
+      "longitude": -43.1790268,
+      "latitude": -22.9080777,
+      "registros": 7,
+      "ceps_distintos": 7
+    },
+    {
+      "longitude": -54.6081159,
+      "latitude": -20.4494839,
+      "registros": 7,
+      "ceps_distintos": 7
+    },
+    {
+      "longitude": -47.092725,
+      "latitude": -23.9759004,
+      "registros": 4,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.8003259,
+      "latitude": -24.1785518,
+      "registros": 3,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.5257245,
+      "latitude": -22.5931036,
+      "registros": 3,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -44.4102303,
+      "latitude": -19.9739085,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.5627604,
+      "latitude": -23.625719,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.6560322,
+      "latitude": -23.6488826,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -51.4997351,
+      "latitude": -30.0779026,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.6304685,
+      "latitude": -23.6959154,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.6912984,
+      "latitude": -23.4775126,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.9844094,
+      "latitude": -22.6988252,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -35.2126281,
+      "latitude": -5.8193078,
+      "registros": 2,
+      "ceps_distintos": 2
+    },
+    {
+      "longitude": -51.9648504,
+      "latitude": -30.1218241,
+      "registros": 2,
+      "ceps_distintos": 1
+    },
+    {
+      "longitude": -46.8044408,
+      "latitude": -23.7920904,
+      "registros": 2,
+      "ceps_distintos": 1
+    }
+  ],
+  "geojson_original_alterado": false,
+  "apto_publicar_todos": false,
+  "nao_publicar_sem_revisao": true,
+  "metodo": "alinhamento bidirecional por subsequencia CEP nos 2442 CNPJs v3; 1237 correspondencias univocas; alertas detectados na fonte e no mapa"
+}
