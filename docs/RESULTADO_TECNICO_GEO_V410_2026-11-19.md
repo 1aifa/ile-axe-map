@@ -38,3 +38,17 @@ As novas coordenadas via CEP também podem ser compartilhadas e são apenas loca
 5. Separar o teste de permissão de publicação da divulgação de dados: `teste-publicacao-geolocalizacao.html` usa apenas pontos v4.8 já públicos.
 
 **Bloqueio mantido:** `nao_publicar_sem_revisao=true`. A v4.10 ainda não é um substituto homologado da base pública.
+
+## Versão persistida na branch — atualização da auditoria
+
+A [execução 44657097069](https://github.com/1aifa/ile-axe-map/actions/runs/44657097069) concluiu com **sucesso**, gravando o GeoJSON, a planilha de 566 casos e o relatório na branch de correção. A consulta renovada ao serviço de CEP alterou ligeiramente os totais em relação ao primeiro artefato:
+
+- **288** coordenadas substituídas por posições **aproximadas** de CEP (em vez de 287 no primeiro artefato);
+- **78** geometrias inseguras ocultadas (em vez de 79);
+- **103** UFs ajustadas e **557** municípios preenchidos ou corrigidos;
+- **172** coordenadas antigas mantidas sem validação de exatidão;
+- **56** logradouros divergentes, **41** sem comprovação de logradouro, mais **9** incompatibilidades CEP/UF e **1** sem coordenada de CEP.
+
+A [auditoria de integridade 44657908871](https://github.com/1aifa/ile-axe-map/actions/runs/44657908871) também concluiu com **sucesso**. O arquivo `data/v4_10_candidata/gate_pre_publicacao.json` confirma 8.610 feições preservadas, 1.237 nomes documentais recuperados, 566 casos críticos auditados, 671 CNPJ não alterados e **0 endereços exatos comprovados nesta rodada**. O bloqueio de publicação como localização exata permanece ativo.
+
+> Os números atualizados acima descrevem a **versão atualmente gravada na branch**. A seção anterior preserva o histórico do primeiro artefato para rastreabilidade.
