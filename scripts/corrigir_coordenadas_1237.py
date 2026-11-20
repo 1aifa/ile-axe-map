@@ -92,17 +92,31 @@ def main():
  erro429=False
  progress=[]
  unique_cep=list(dict.fromkeys(r["cep"] for r in targets if len(r["cep"])==8))
- for i,cep in enumerate(unique_cep,1):
-  if cep in cache:continue
-  if erro429:break
-  item=lookup_cep(cep);cache[cep]=item
-  with CACHE.open("a",encoding="utf-8") as f:f.write(json.dumps(item,ensure_ascii=False)+"\n")
-  total_consultas+=1
-  if item.get("erro") in ("HTTP_429","HTTP_403"):
-   erro429=True
-  if i%40==0:
-   print(f"consultas CEP {i}/{len(unique_cep)}; HTTP erro={item.get('erro')}; ativas={total_consultas}",flush=True)
-  time.sleep(.6)
+ # Consultas independentes e limitadas em paralelo. No lote anterior, 480/558
+ # consultas ficaram sem artefato devido ao timeout de 25 min.
+ from concurrent.futures import ThreadPoolExecutor, as_completed
+ pending=[c for c in unique_cep if c not in cache]
+ def worker(cep):
+  for attempt in range(3):
+   item=lookup_cep(cep)
+   if item.get("erro") not in ("HTTP_429","HTTP_503","TimeoutError","URLError"):
+    return item
+   time.sleep((attempt+1)*2)
+  return item
+ if pending:
+  with ThreadPoolExecutor(max_workers=4) as pool:
+   futures={pool.submit(worker,cep):cep for cep in pending}
+   for future in as_completed(futures):
+    cep=futures[future]
+    item=future.result()
+    cache[cep]=item
+    with CACHE.open("a",encoding="utf-8") as f:
+     f.write(json.dumps(item,ensure_ascii=False)+"\n")
+    total_consultas+=1
+    if item.get("erro") in ("HTTP_429","HTTP_403"):
+     erro429=True
+    if total_consultas%40==0:
+     print(f"consultas CEP {total_consultas}/{len(pending)}; ultima={cep}; erro={item.get('erro')}",flush=True)
  changes=[]; counts=Counter()
  for r in targets:
   f=by_id[r["entity_id"]];p=f["properties"]
@@ -141,6 +155,22 @@ def main():
    action="BLOQUEADO_CEP_UF_DIVERGEM"
    if severity:
     f["geometry"]=None;counts["pontos_inseguros_ocultados"]+=1
+  elif valid_xy(new) and street_match is False:
+   # CEP coerente com a UF, mas logradouro não bate: não atribuir ponto.
+   p["geo_status"]="geocode_nao_resolvido_logradouro_divergente"
+   p["geo_precisao"]="sem_validacao_do_endereco"
+   if severity:
+    f["geometry"]=None;counts["pontos_inseguros_ocultados"]+=1
+   counts["logradouros_divergentes"]+=1
+   action="BLOQUEADO_LOGRADOURO_DIVERGENTE"
+  elif valid_xy(new) and street_match is None:
+   # Fonte não declara rua verificável, então a posição do CEP não identifica a casa.
+   p["geo_status"]="geocode_nao_resolvido_logradouro_sem_comprovacao"
+   p["geo_precisao"]="sem_validacao_do_endereco"
+   if severity:
+    f["geometry"]=None;counts["pontos_inseguros_ocultados"]+=1
+   counts["logradouro_ausente"]+=1
+   action="BLOQUEADO_SEM_COMPROVACAO_LOGRADOURO"
   elif valid_xy(new):
    distance=dkm(old,new)
    # Clusters genéricos, POIs de categoria alheia e divergências com o CSV:
