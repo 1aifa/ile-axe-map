@@ -51,5 +51,10 @@ jobs:
           git add data/v4_10_candidata/
           if ! git diff --cached --quiet; then
             git commit -m "geo: corrigir clusters e UF com CEP verificado (somente candidato)"
+            # O cálculo é demorado. Outras adições à branch podem ocorrer
+            # durante a consulta dos CEPs; integrar commits remotos sem
+            # sobrescrevê-los antes de publicar o resultado isolado.
+            git fetch origin correcao-geocoordenadas-1237-2026-11-19
+            git rebase origin/correcao-geocoordenadas-1237-2026-11-19
             git push origin HEAD:correcao-geocoordenadas-1237-2026-11-19
           fi
