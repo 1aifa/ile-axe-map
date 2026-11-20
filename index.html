@@ -870,7 +870,7 @@
         ['Orixá regente', p.regente || ''],
         ['Município', p.municipio || ''],
         ['Bairro', p.bairro || ''],
-        ['Situação do nome', p.nome_status === 'nome_cadastral_cnpj_pendente_validacao_da_casa' ? 'Nome documental (CNPJ); nome de uso da casa ainda não validado' : p.nome_status === 'nao_declarado_fonte' ? 'Nome da casa não informado no cadastro histórico' : p.nome_status === 'nome_da_casa_ausente_fonte' ? 'Nome oficial pendente de confirmação comunitária' : ''],
+        ['Situação do nome', p.nome_status === 'nome_cadastral_cnpj_pendente_validacao_da_casa' ? 'Nome documental (CNPJ); nome de uso da casa ainda não validado' : p.nome_status === 'nao_declarado_fonte' ? 'Nome da casa não informado no cadastro histórico' : p.nome_status === 'nome_da_casa_ausente_fonte' ? 'Nome oficial pendente de confirmação comunitária' : p.nome_status === 'recuperado_por_registro_historico_idêntico_pendente_validacao' ? 'Nome encontrado em outra ficha da mesma fonte, com endereço, CEP, liderança, religião, nação e ano coincidentes; possível duplicidade em revisão' : ''],
         ['Estado', p.uf || ''],
         ['Precisão da localização', displayProps.geo_status || '']
       ];
