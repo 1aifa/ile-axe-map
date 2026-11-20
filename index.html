@@ -551,7 +551,17 @@
     }
     function rotuloTrad(p) { return p._tradicao || 'Não especificada'; }
 
-    function getName(p) { return p.nome || p.name || p.title || 'Terreiro sem nome'; }
+    function getName(p) {
+      const name = String(p.nome || p.name || p.title || '').trim();
+      const norm = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      const unknown = ['nao informado', 'sem nome', 'terreiro sem nome'].includes(norm);
+      if (unknown && (p.nome_status === 'nao_declarado_fonte' || p.nome_status === 'nome_da_casa_ausente_fonte')) {
+        const fonte = (p.fontes || []).includes('ceao') ? 'CEAO' : (p.fontes || []).includes('mapeando_axe_csv') ? 'Mapeando Axé' : 'Fonte histórica';
+        const referencia = String(p.fonte_id || p.ceao_id || '').trim();
+        return 'Nome da casa não informado — ' + fonte + (referencia ? ' #' + referencia : '');
+      }
+      return name || 'Terreiro sem nome';
+    }
     function getFonteLabel(p) {
       // GeoJSON unificado: fonte principal da entidade, com prioridade de confiabilidade
       if (Array.isArray(p.fontes) && p.fontes.length) {
@@ -916,7 +926,7 @@
         }
         if (q) {
           const p = f.properties;
-          const haystack = ((getName(p) || '') + ' ' + (p.nacao || '') + ' ' + (p.municipio || '') + ' ' + (p.uf || '')).toLowerCase();
+          const haystack = ((getName(p) || '') + ' ' + (p.nacao || '') + ' ' + (p.municipio || '') + ' ' + (p.uf || '') + ' ' + (p.fonte_id || '') + ' ' + (p.ceao_id || '') + ' ' + (p.entity_id || '')).toLowerCase();
           if (!haystack.includes(q)) return false;
         }
         return activeTrad.has(f.properties._tradicao) && passaNacao(f.properties) && activeFonte.has(getFonteLabel(f.properties));
