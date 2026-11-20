@@ -1,0 +1,37 @@
+name: QA de integridade v4.10 antes de publicação
+on:
+  push:
+    branches: [correcao-geocoordenadas-1237-2026-11-19]
+    paths:
+      - "data/v4_10_candidata/terreiros_nacional_v4_10_candidata.geojson"
+      - "scripts/qa_pre_publicacao_v410.py"
+      - ".github/workflows/qa-pre-publicacao-v410.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Conferir integridade, diferenças e status não homologado
+        run: python scripts/qa_pre_publicacao_v410.py
+      - name: Guardar relatório de gate
+        uses: actions/upload-artifact@v4
+        with:
+          name: gate-pre-publicacao-v410
+          path: data/v4_10_candidata/gate_pre_publicacao.json
+          retention-days: 90
+      - name: Versionar relatório na branch isolada
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v4_10_candidata/gate_pre_publicacao.json
+          if ! git diff --cached --quiet; then
+            git commit -m "test: registrar integridade tecnica da candidata v4.10"
+            git push origin HEAD:correcao-geocoordenadas-1237-2026-11-19
+          fi
