@@ -1,0 +1,25 @@
+{
+  "versao": "v4.10_candidata_correcao_geografica",
+  "base": "v4.9_candidata_auditoria_90",
+  "total_geojson": 8610,
+  "lote_critico": 566,
+  "total_cep_distintos_alvo": 558,
+  "consultas_cep_executadas_nesta_rodada": 558,
+  "ceps_com_cache": 558,
+  "interrompido_por_rate_limit": false,
+  "contagens": {
+    "uf_corrigidas": 103,
+    "municipios_preenchidos_ou_corrigidos": 557,
+    "mantidos_sem_validacao_exata": 172,
+    "revisados": 566,
+    "coordenadas_substituidas_aproximacao_cep": 288,
+    "logradouro_ausente": 41,
+    "logradouros_divergentes": 56,
+    "pontos_inseguros_ocultados": 78
+  },
+  "coord_exata_confirmada": 0,
+  "versao_publica_alterada": false,
+  "auditoria_arquivo": "data/v4_10_candidata/correcoes_geograficas_1237.csv",
+  "status": "CANDIDATA NAO PUBLICAR",
+  "nota": "Ponto CEP é regional/aproximado, não entrada do terreiro. 671 outros registros ainda aguardam validação. Nomes de uso não comprovados."
+}
