@@ -1,0 +1,358 @@
+{
+  "contagens": {
+    "cobertos": 800,
+    "class:confirmado": 69,
+    "google_coordenadas": 791,
+    "cep_coincidente": 185,
+    "cep_uf_coincidentes": 184,
+    "cep_uf_numero_coincidentes": 143,
+    "evidencia_google_estrita": 136,
+    "class:divergente_inconclusivo": 519,
+    "class:confirmado_proximo": 84,
+    "evidencia_google_estrita_criticos": 19,
+    "class:google_melhor": 51,
+    "class:novo_google_possivel": 52,
+    "class:nao_encontrado": 12,
+    "class:match_ruim": 11,
+    "class:proximo_nome_diferente": 2
+  },
+  "exemplos_evidencia_estrita": [
+    {
+      "cnpj": "37.233.408/0001-13",
+      "nome": "TERREIRO DE UMBANDA SEARA DE LUZ PAI JOAO DE ANGOLA E BOIADEIRO SETE PEDREI",
+      "google_nome": "T.U. Seara de Luz Pai João de Angola e Boiadeiro Sete Pedreiras",
+      "google_endereco": "R. Rev. Martim Luther King, 176 - Centreville, Santo André - SP, 09120-130",
+      "clas": "confirmado",
+      "similaridade": 0.87,
+      "geo_original": [
+        "-23.6718132",
+        "-46.495456"
+      ],
+      "geo_google": [
+        -23.6725798,
+        -46.4954222
+      ],
+      "alertas": ""
+    },
+    {
+      "cnpj": "39.952.408/0001-07",
+      "nome": "CENTRO DE UMBANDA LUZ DE OXUM",
+      "google_nome": "Centro de Umbanda Luz de Oxum",
+      "google_endereco": "R. Antônina, 321 - Oficinas, Ponta Grossa - PR, 84036-410",
+      "clas": "confirmado_proximo",
+      "similaridade": 1.0,
+      "geo_original": [
+        "-25.1303173",
+        "-50.1435508"
+      ],
+      "geo_google": [
+        -25.1314629,
+        -50.1441682
+      ],
+      "alertas": "UF_DIVERGE_DA_FONTE"
+    },
+    {
+      "cnpj": "40.617.044/0001-80",
+      "nome": "ASSOCIACAO RELIGIOSA, CULTURAL,SOCIAL E BENEFICENTE DE TRADICOES AFROBRASIL",
+      "google_nome": "Associação Religiosa, Cultural, Social e Beneficente de Tradições Afro-brasileiras Terreiro de Umbanda Caboclo Quebra Galho e Pai Jose de Aruanda.",
+      "google_endereco": "R. Piauí, 30 - Jardim Magali, Itapira - SP, 13972-094",
+      "clas": "divergente_inconclusivo",
+      "similaridade": 0.99,
+      "geo_original": [
+        "-23.5383214",
+        "-46.6391624"
+      ],
+      "geo_google": [
+        -22.4353151,
+        -46.8161804
+      ],
+      "alertas": "GEOCODIFICACAO_EM_POI_NAO_CONFIAVEL|MESMO_PONTO_PARA_CEPS_DISTINTOS"
+    },
+    {
+      "cnpj": "45.012.758/0001-88",
+      "nome": "ORGANIZACAO RELIGIOSA CASA DE SULTAO - CENTRO DE UMBANDA JEQUIRICA DE SULTA",
+      "google_nome": "CASA DE SULTÃO - Centro De Umbanda Jequiriça Sultão Das Matas ( CEUJSM )",
+      "google_endereco": "Av. Afrânio Peixoto, 35 - Praia Grande, Salvador - BA, 40720-690",
+      "clas": "confirmado",
+      "similaridade": 0.77,
+      "geo_original": [
+        "-12.8743123",
+        "-38.4776756"
+      ],
+      "geo_google": [
+        -12.8745511,
+        -38.47796770000001
+      ],
+      "alertas": ""
+    },
+    {
+      "cnpj": "52.946.344/0001-91",
+      "nome": "TENDA DE UMBANDA CAMINHOS DA LEI",
+      "google_nome": "Tenda de Umbanda Caminhos da Lei",
+      "google_endereco": "R. Pindorama, 91 - Olímpico, São Caetano do Sul - SP, 09540-630",
+      "clas": "confirmado_proximo",
+      "similaridade": 1.0,
+      "geo_original": [
+        "-23.625719",
+        "-46.5627604"
+      ],
+      "geo_google": [
+        -23.6253909,
+        -46.5618139
+      ],
+      "alertas": ""
+    },
+    {
+      "cnpj": "53.445.695/0001-81",
+      "nome": "ASSOCIACAO ESPIRITA DE UMBANDA AGUAS CLARAS",
+      "google_nome": "Centro Espírita de Umbanda Águas Claras",
+      "google_endereco": "R. Grujim, 555 - Rosa Elze, São Cristóvão - SE, 49100-000",
+      "clas": "divergente_inconclusivo",
+      "similaridade": 0.85,
+      "geo_original": [
+        "-10.9610749",
+        "-37.1767934"
+      ],
+      "geo_google": [
+        -10.9226296,
+        -37.1069283
+      ],
+      "alertas": "UF_DIVERGE_DA_FONTE|GEOCODIFICACAO_APROXIMADA"
+    },
+    {
+      "cnpj": "94.874.245/0001-91",
+      "nome": "CENTRO ESPIRITA DE UMBANDA CRUZEIRO DO SUL",
+      "google_nome": "Centro Espírita de Umbanda Cruzeiro do Sul",
+      "google_endereco": "R. Dr. Napoleão Laureano, 173 - Centro, Rio Grande - RS, 96200-100",
+      "clas": "divergente_inconclusivo",
+      "similaridade": 1.0,
+      "geo_original": [
+        "-28.731201",
+        "-52.841286"
+      ],
+      "geo_google": [
+        -32.0331115,
+        -52.09272499999999
+      ],
+      "alertas": "GEOCODIFICACAO_APROXIMADA|MESMO_PONTO_PARA_CEPS_DISTINTOS"
+    },
+    {
+      "cnpj": "20.052.619/0001-57",
+      "nome": "TERREIRO DE JUREMA SAGRADA CABOCLO AKUAN",
+      "google_nome": "Terreiro de Jurema Sagrada Caboclo Akuan",
+      "google_endereco": "R. Dr. Ludovice, 1009 - Vila Nossa Sra. Abadia, Uberaba - MG, 38026-050",
+      "clas": "divergente_inconclusivo",
+      "similaridade": 1.0,
+      "geo_original": [
+        "-18.9921507",
+        "-49.4455477"
+      ],
+      "geo_google": [
+        -19.7617274,
+        -47.9259198
+      ],
+      "alertas": "GEOCODIFICACAO_APROXIMADA|MESMO_PONTO_PARA_CEPS_DISTINTOS"
+    },
+    {
+      "cnpj": "07.980.730/0001-45",
+      "nome": "TENDA DE UMBANDA CAMINHEIROS DO BEM",
+      "google_nome": "Tenda de Umbanda caminheiros do bem",
+      "google_endereco": "R. Secundino Carneiro, 48 - Prado, Recife - PE, 50630-580",
+      "clas": "confirmado",
+      "similaridade": 1.0,
+      "geo_original": [
+        "-8.0561698",
+        "-34.9234889"
+      ],
+      "geo_google": [
+        -8.05614,
+        -34.9234261
+      ],
+      "alertas": ""
+    },
+    {
+      "cnpj": "92.235.829/0001-91",
+      "nome": "FEDERACAO SUL RIOGRANDENSE DE UMBANDA E CULTOS AFRO BRASILEIROS",
+      "google_nome": "Federação Sul Riograndense de Umbanda",
+      "google_endereco": "R. Xavier Ferreira, 1000 - Porto, Pelotas - RS, 96010-540",
+      "clas": "confirmado_proximo",
+      "similaridade": 0.74,
+      "geo_original": [
+        "-31.7707853",
+        "-52.3315838"
+      ],
+      "geo_google": [
+        -31.7735568,
+        -52.3313428
+      ],
+      "alertas": ""
+    },
+    {
+      "cnpj": "88.734.827/0001-70",
+      "nome": "SOCIEDADE ESPIRITUALISTA DE UMBANDA REINO DE OGUM ITATI",
+      "google_nome": "Sociedade Espiritualista De Umbanda Reino De Ogum It",
+      "google_endereco": "R. Joaquim Nabuco, 37 - Operário, Três Passos - RS, 98600-000",
+      "clas": "confirmado_proximo",
+      "similaridade": 0.97,
+      "geo_original": [
+        "-27.4464128",
+        "-53.9323439"
+      ],
+      "geo_google": [
+        -27.4471989,
+        -53.9345698
+      ],
+      "alertas": ""
+    },
+    {
+      "cnpj": "14.392.271/0001-44",
+      "nome": "CENTRO DE UMBANDA NANA E YEMANJA",
+      "google_nome": "Centro de Umbanda Nana e Yemanja",
+      "google_endereco": "Rua Conde Ribeiro do Vale, 805 - Sagrada Família, Belo Horizonte - MG, 31030-470",
+      "clas": "confirmado",
+      "similaridade": 1.0,
+      "geo_original": [
+        "-19.9035823",
+        "-43.9212912"
+      ],
+      "geo_google": [
+        -19.9035059,
+        -43.9213065
+      ],
+      "alertas": ""
+    }
+  ],
+  "amostras_criticas": [
+    {
+      "cnpj": "38.215.081/0001-10",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": true,
+      "numero_igual": false,
+      "similaridade": 0.83,
+      "endereco_google": "R. Adolfo Antônio Emmendoerfer, 2685 - Rio Molha, Jaraguá do Sul - SC"
+    },
+    {
+      "cnpj": "39.745.684/0001-96",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": true,
+      "numero_igual": false,
+      "similaridade": 0.56,
+      "endereco_google": "Rua São Benedito, 381 - Santo Amaro, São Paulo - SP, 04735-000"
+    },
+    {
+      "cnpj": "39.952.408/0001-07",
+      "class": "confirmado_proximo",
+      "cep_igual": true,
+      "uf_igual": true,
+      "numero_igual": true,
+      "similaridade": 1.0,
+      "endereco_google": "R. Antônina, 321 - Oficinas, Ponta Grossa - PR, 84036-410"
+    },
+    {
+      "cnpj": "40.569.579/0001-22",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": false,
+      "numero_igual": false,
+      "similaridade": 0.65,
+      "endereco_google": "R. Joaquim Gonçalves, 115 - Jardim Rodeio, Mogi das Cruzes - SP, 08775-320"
+    },
+    {
+      "cnpj": "41.173.057/0001-70",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": true,
+      "numero_igual": false,
+      "similaridade": 0.68,
+      "endereco_google": "R. Álvaro Américo da Silva, 25, Porto Ferreira - SP, 13660-000"
+    },
+    {
+      "cnpj": "40.617.044/0001-80",
+      "class": "divergente_inconclusivo",
+      "cep_igual": true,
+      "uf_igual": true,
+      "numero_igual": true,
+      "similaridade": 0.99,
+      "endereco_google": "R. Piauí, 30 - Jardim Magali, Itapira - SP, 13972-094"
+    },
+    {
+      "cnpj": "43.255.935/0001-21",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": true,
+      "numero_igual": false,
+      "similaridade": 0.89,
+      "endereco_google": "R. Carmem Waselewski Perussolo, 197 - Jardim Sao Vicente, Campo Largo - PR, 83602-393"
+    },
+    {
+      "cnpj": "43.539.762/0001-73",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": false,
+      "numero_igual": false,
+      "similaridade": 0.77,
+      "endereco_google": "R. Copaíba, 2211 - Moreninha, Campo Grande - MS, 79065-710"
+    },
+    {
+      "cnpj": "44.280.130/0001-09",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": true,
+      "numero_igual": false,
+      "similaridade": 0.98,
+      "endereco_google": "Edificio Sul America - Tv. da Ajuda, 2 - Sl 608 - Centro Historico, Salvador - BA, 40026-038"
+    },
+    {
+      "cnpj": "46.436.379/0001-88",
+      "class": "divergente_inconclusivo",
+      "cep_igual": false,
+      "uf_igual": true,
+      "numero_igual": false,
+      "similaridade": 0.36,
+      "endereco_google": "Av. Sport Club Corinthians Paulista, 1600/1610 - Parque Artur Alvim, São Paulo - SP, 03568-000"
+    }
+  ],
+  "brasilapi": [
+    {
+      "cep": "08743550",
+      "state": "SP",
+      "city": "Mogi das Cruzes",
+      "street": "Rua Afonso Mentone",
+      "location": {
+        "type": "Point",
+        "coordinates": {
+          "longitude": "-46.18833",
+          "latitude": "-23.52278"
+        }
+      }
+    },
+    {
+      "cep": "35501079",
+      "state": "MG",
+      "city": "Divinópolis",
+      "street": "Rua Frei Respício",
+      "location": {
+        "type": "Point",
+        "coordinates": {
+          "longitude": "-44.89065",
+          "latitude": "-20.14355"
+        }
+      }
+    },
+    {
+      "cep": "40020030",
+      "state": "BA",
+      "city": "Salvador",
+      "street": "Travessa da Ajuda",
+      "location": {
+        "type": "Point",
+        "coordinates": {
+          "longitude": "-38.49096",
+          "latitude": "-12.97563"
+        }
+      }
+    }
+  ]
+}
