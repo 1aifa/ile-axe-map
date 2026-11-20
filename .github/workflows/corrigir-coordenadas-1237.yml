@@ -1,0 +1,55 @@
+name: Corrigir coordenadas criticas por CEP verificavel (candidata)
+on:
+  push:
+    branches: [correcao-geocoordenadas-1237-2026-11-19]
+    paths:
+      - "scripts/corrigir_coordenadas_1237.py"
+      - ".github/workflows/corrigir-coordenadas-1237.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  corrigir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Corrigir somente na base candidata e gerar rastreabilidade
+        run: python -u scripts/corrigir_coordenadas_1237.py
+      - name: Validar a versão candidata
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/v4_10_candidata/terreiros_nacional_v4_10_candidata.geojson')
+          j=json.loads(p.read_text(encoding='utf-8'))
+          f=j["features"]
+          assert len(f)==8610 and j["metadata"]["nao_publicar_sem_revisao"] is True
+          rec=[x for x in f if x['properties'].get('recuperacao_status')=='recuperado_fonte_cnpj']
+          assert len(rec)==1237
+          assert all(x['properties']['nome']!='Sem nome' for x in rec)
+          r=json.loads(Path('data/v4_10_candidata/relatorio_correcao_coordenadas.json').read_text(encoding='utf-8'))
+          assert r['lote_critico']==566
+          print("CHECKS_OK",r['contagens'])
+          PY
+      - name: Guardar artefatos
+        uses: actions/upload-artifact@v4
+        with:
+          name: ile-axe-map-v410-coordenadas-candidata
+          path: |
+            data/v4_10_candidata/terreiros_nacional_v4_10_candidata.geojson
+            data/v4_10_candidata/correcoes_geograficas_1237.csv
+            data/v4_10_candidata/relatorio_correcao_coordenadas.json
+          retention-days: 90
+      - name: Versionar apenas os resultados de correcao na branch de trabalho
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v4_10_candidata/
+          if ! git diff --cached --quiet; then
+            git commit -m "geo: corrigir clusters e UF com CEP verificado (somente candidato)"
+            git push origin HEAD:correcao-geocoordenadas-1237-2026-11-19
+          fi
