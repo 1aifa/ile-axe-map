@@ -44,7 +44,7 @@ for i, f in enumerate(vceao):
       "ano_fundacao": x.get("ano_fundacao"), "regente": x.get("regente"),
       "foto_thumb": f"data/ceao/fotos/{x['id']}_thumb.jpg" if photo.exists() else None, "versao": "v4.9_candidata_auditoria_90"}
     made.append({"type": "Feature", "geometry": {"type": "Point", "coordinates": [lon,lat]}, "properties": prop})
-    triage.append({"fonte": "CEAO", "id_fonte": x["id"], "municipio": "Salvador", "uf": "BA", "status_nome": "nao_declarado_fonte", "status_geo": "fonte_historica", "nome_recuperado": "nao"})
+    triage.append({"fonte": "CEAO", "id_fonte": x["id"], "municipio": "Salvador", "uf": "BA", "status_nome": "nao_declarado_fonte", "status_geo": "fonte_historica", "nome_recuperado": "nao", "nome_atual": x["nome"], "nome_fonte_correspondencia_id": ""})
 def norm_identity(value):
     return n(value).casefold()
 
@@ -91,7 +91,7 @@ for i,f in enumerate(vaxe):
      "validacao_comunitaria": "pendente", "geocoding_confidence": g.get("confidence") if ok else None,
      "precisao_geocodificacao": g.get("precision") if ok else None, "versao":"v4.9_candidata_auditoria_90"}
     made.append({"type":"Feature","geometry":geom,"properties":prop})
-    triage.append({"fonte":"Mapeando Axe","id_fonte":x["source_record_id"],"municipio":x["city"],"uf":x["state"],"status_nome":"recuperado_mesma_fonte_mesma_identidade_documental" if same_record else "nao_declarado_fonte","status_geo":g.get("precision") if ok else "pendente","nome_recuperado":"sim_documental" if same_record else "nao"})
+    triage.append({"fonte":"Mapeando Axe","id_fonte":x["source_record_id"],"municipio":x["city"],"uf":x["state"],"status_nome":"recuperado_mesma_fonte_mesma_identidade_documental" if same_record else "nao_declarado_fonte","status_geo":g.get("precision") if ok else "pendente","nome_recuperado":"sim_documental" if same_record else "nao", "nome_atual":same_record["name"] if same_record else x["name"],"nome_fonte_correspondencia_id":str(same_record["source_record_id"]) if same_record else ""})
 def generic(f):
     p=f["properties"]
     return (p.get("fontes")==["ceao"] and n(p.get("nome")).casefold()=="não informado") or (p.get("fontes")==["mapeando_axe_csv"] and p.get("nome")=="Terreiro Sem Nome")
