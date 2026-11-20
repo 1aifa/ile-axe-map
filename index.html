@@ -1,0 +1,57 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="robots" content="noindex,nofollow,noarchive">
+ <title>Ilê Axé Map — Prévia geográfica de teste v4.10</title>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+ <style>
+ *{box-sizing:border-box}body{margin:0;background:#fbf7ef;color:#261d19;font:15px/1.55 system-ui,sans-serif}
+ header,main,footer{max-width:1080px;margin:auto;padding:22px}
+ h1{font-size:clamp(25px,5vw,40px);line-height:1.15;margin:8px 0;color:#633b28}
+ .eyebrow{font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#99642d;font-size:11px}
+ .warning{border-left:4px solid #b77d33;background:#fff0d1;border-radius:6px;padding:15px;margin:17px 0}
+ .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+ .stat{border:1px solid #ded5c7;border-radius:9px;background:#fff;padding:14px}
+ .stat b{display:block;font-size:29px;color:#804920}.stat small{color:#65594f}
+ .toolbar{background:white;border:1px solid #ded5c7;padding:12px;border-radius:9px;display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+ #map{height:480px;background:#e7eeea;border:1px solid #dfd5c7;border-radius:10px;margin:12px 0}
+ select{font:inherit;padding:9px;border-radius:7px;border:1px solid #b9aa97;background:white}
+ a{color:#844a2c}.muted{color:#675d54;font-size:13px}
+ @media(max-width:620px){#map{height:390px}.stats{grid-template-columns:1fr}}
+ </style></head><body>
+ <header><div class="eyebrow">Ilê Axé Map · Prévia experimental independente</div>
+ <h1>Geolocalização: teste v4.10</h1>
+ <p>Esta página demonstra os pontos regionais aproximados derivados dos CEPs no conjunto de correções. O site oficial não foi alterado.</p>
+ <div class="warning"><b>Não são endereços dos terreiros.</b> Os marcadores indicam apenas uma posição geográfica aproximada de CEP, não a casa religiosa nem sua entrada. Dados de identificação e endereços foram deliberadamente retirados. Nenhum ponto foi validado em campo nesta etapa.</div></header>
+ <main><div class="stats">
+ <div class="stat"><b>288</b><small>Posições provisórias por CEP geradas na v4.10</small></div>
+ <div class="stat"><b>78</b><small>Geometrias críticas ocultadas na candidata</small></div>
+ <div class="stat"><b>0</b><small>Localizações exatas comprovadas nesta rodada</small></div></div>
+ <div class="toolbar"><label for="uf">Filtrar estado:</label><select id="uf"><option value="">Todo o Brasil</option></select>
+ <span id="shown" class="muted">Carregando pontos de teste...</span></div>
+ <div id="map" role="region" aria-label="Mapa de pontos aproximados anônimos por CEP"></div>
+ <p class="muted">Os pontos representam exclusivamente a dispersão de 288 CEPs corrigidos na candidata. Múltiplos registros podem compartilhar a mesma posição. Não substitui a validação documental, comunitária ou em campo.</p>
+ <p><a href="https://github.com/1aifa/ile-axe-map/tree/correcao-geocoordenadas-1237-2026-11-19">Código e trilha da auditoria</a></p></main>
+ <footer class="muted">Prévia de teste independente · Dados anonimizados · Ilê Axé Map · 2026</footer>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ <script>const DATA=[{"lon":-60.025,"lat":-3.10194,"uf":"AM","n":1},{"lon":-57.65333,"lat":-19.00917,"uf":"MS","n":2},{"lon":-54.64639,"lat":-20.44278,"uf":"MS","n":2},{"lon":-54.26306,"lat":-28.29917,"uf":"RS","n":1},{"lon":-53.45528,"lat":-24.95583,"uf":"PR","n":1},{"lon":-52.89389,"lat":-30.03917,"uf":"RS","n":1},{"lon":-52.62182,"lat":-27.07767,"uf":"SC","n":1},{"lon":-52.09861,"lat":-32.035,"uf":"RS","n":2},{"lon":-51.93861,"lat":-23.42528,"uf":"PR","n":4},{"lon":-51.70338,"lat":-20.78765,"uf":"MS","n":2},{"lon":-51.46083,"lat":-23.55083,"uf":"PR","n":2},{"lon":-51.325,"lat":-30.11389,"uf":"RS","n":2},{"lon":-51.27833,"lat":-23.27583,"uf":"PR","n":1},{"lon":-51.23019,"lat":-30.03283,"uf":"RS","n":3},{"lon":-51.18361,"lat":-29.91778,"uf":"RS","n":2},{"lon":-51.17917,"lat":-29.86139,"uf":"RS","n":2},{"lon":-51.16278,"lat":-23.31028,"uf":"PR","n":1},{"lon":-51.14722,"lat":-29.76028,"uf":"RS","n":2},{"lon":-51.07632,"lat":-30.00018,"uf":"RS","n":2},{"lon":-51.00694,"lat":-29.63806,"uf":"RS","n":1},{"lon":-50.99278,"lat":-29.94218,"uf":"RS","n":2},{"lon":-50.51361,"lat":-21.93472,"uf":"SP","n":2},{"lon":-50.43278,"lat":-21.20889,"uf":"SP","n":1},{"lon":-50.32611,"lat":-27.81611,"uf":"SC","n":1},{"lon":-50.16194,"lat":-25.095,"uf":"PR","n":1},{"lon":-49.94583,"lat":-22.21389,"uf":"SP","n":2},{"lon":-49.52111,"lat":-20.81917,"uf":"SP","n":1},{"lon":-49.37944,"lat":-20.81972,"uf":"SP","n":4},{"lon":-49.27306,"lat":-25.42778,"uf":"PR","n":8},{"lon":-49.22083,"lat":-21.46806,"uf":"SP","n":2},{"lon":-49.06795,"lat":-25.44227,"uf":"PR","n":1},{"lon":-49.06056,"lat":-22.31472,"uf":"SP","n":3},{"lon":-48.56778,"lat":-20.55722,"uf":"SP","n":2},{"lon":-48.55806,"lat":-22.49472,"uf":"SP","n":2},{"lon":-48.50444,"lat":-1.45583,"uf":"PA","n":1},{"lon":-48.445,"lat":-22.88583,"uf":"SP","n":3},{"lon":-48.27722,"lat":-18.91861,"uf":"MG","n":2},{"lon":-48.21301,"lat":-21.76244,"uf":"SP","n":1},{"lon":-48.17556,"lat":-21.79444,"uf":"SP","n":3},{"lon":-47.93194,"lat":-19.74833,"uf":"MG","n":10},{"lon":-47.85694,"lat":-23.35556,"uf":"SP","n":1},{"lon":-47.81028,"lat":-21.1775,"uf":"SP","n":2},{"lon":-47.585,"lat":-20.89111,"uf":"SP","n":1},{"lon":-47.47917,"lat":-21.85389,"uf":"SP","n":2},{"lon":-47.41361,"lat":-22.75361,"uf":"SP","n":2},{"lon":-47.40167,"lat":-22.56472,"uf":"SP","n":1},{"lon":-47.40083,"lat":-20.53861,"uf":"SP","n":1},{"lon":-47.29917,"lat":-23.26417,"uf":"SP","n":2},{"lon":-47.26694,"lat":-22.82194,"uf":"SP","n":3},{"lon":-47.2119,"lat":-23.08842,"uf":"SP","n":2},{"lon":-47.1725,"lat":-22.57306,"uf":"SP","n":1},{"lon":-47.06083,"lat":-22.90556,"uf":"SP","n":24},{"lon":-46.99833,"lat":-24.32,"uf":"SP","n":1},{"lon":-46.99583,"lat":-22.97056,"uf":"SP","n":1},{"lon":-46.99139,"lat":-20.91694,"uf":"MG","n":1},{"lon":-46.97528,"lat":-23.02972,"uf":"SP","n":1},{"lon":-46.95778,"lat":-22.43194,"uf":"SP","n":1},{"lon":-46.94552,"lat":-22.3677,"uf":"SP","n":1},{"lon":-46.94056,"lat":-19.59333,"uf":"MG","n":1},{"lon":-46.91917,"lat":-23.60389,"uf":"SP","n":3},{"lon":-46.91778,"lat":-23.44417,"uf":"SP","n":1},{"lon":-46.88417,"lat":-23.18639,"uf":"SP","n":3},{"lon":-46.87611,"lat":-23.51056,"uf":"SP","n":2},{"lon":-46.83889,"lat":-23.00583,"uf":"SP","n":3},{"lon":-46.835,"lat":-23.52272,"uf":"SP","n":1},{"lon":-46.82167,"lat":-22.43611,"uf":"SP","n":3},{"lon":-46.81139,"lat":-23.83222,"uf":"SP","n":1},{"lon":-46.79167,"lat":-23.62611,"uf":"SP","n":3},{"lon":-46.79167,"lat":-23.5325,"uf":"SP","n":6},{"lon":-46.78875,"lat":-21.97241,"uf":"SP","n":1},{"lon":-46.7838,"lat":-23.20554,"uf":"SP","n":2},{"lon":-46.76444,"lat":-22.70111,"uf":"SP","n":1},{"lon":-46.74528,"lat":-23.28167,"uf":"SP","n":4},{"lon":-46.74056,"lat":-23.36417,"uf":"SP","n":1},{"lon":-46.72694,"lat":-23.32167,"uf":"SP","n":2},{"lon":-46.63611,"lat":-23.5475,"uf":"SP","n":8},{"lon":-46.62278,"lat":-23.68611,"uf":"SP","n":5},{"lon":-46.58667,"lat":-23.31861,"uf":"SP","n":1},{"lon":-46.565,"lat":-23.69389,"uf":"SP","n":4},{"lon":-46.55111,"lat":-23.62306,"uf":"SP","n":1},{"lon":-46.55028,"lat":-23.11694,"uf":"SP","n":3},{"lon":-46.54418,"lat":-22.9527,"uf":"SP","n":1},{"lon":-46.53833,"lat":-23.66389,"uf":"SP","n":2},{"lon":-46.53333,"lat":-23.46278,"uf":"SP","n":6},{"lon":-46.46139,"lat":-23.66778,"uf":"SP","n":1},{"lon":-46.41333,"lat":-23.71056,"uf":"SP","n":1},{"lon":-46.40278,"lat":-24.00583,"uf":"SP","n":3},{"lon":-46.39194,"lat":-23.96306,"uf":"SP","n":3},{"lon":-46.36861,"lat":-23.54083,"uf":"SP","n":1},{"lon":-46.34833,"lat":-23.48611,"uf":"SP","n":2},{"lon":-46.31083,"lat":-23.5425,"uf":"SP","n":4},{"lon":-46.25639,"lat":-23.99306,"uf":"SP","n":1},{"lon":-46.22652,"lat":-23.5444,"uf":"SP","n":1},{"lon":-46.18833,"lat":-23.52278,"uf":"SP","n":4},{"lon":-45.96583,"lat":-23.30528,"uf":"SP","n":1},{"lon":-45.93639,"lat":-22.23,"uf":"MG","n":1},{"lon":-45.88694,"lat":-23.17944,"uf":"SP","n":2},{"lon":-45.70694,"lat":-23.10083,"uf":"SP","n":1},{"lon":-45.46167,"lat":-22.92389,"uf":"SP","n":1},{"lon":-45.41306,"lat":-23.62028,"uf":"SP","n":1},{"lon":-44.89065,"lat":-20.14355,"uf":"MG","n":1},{"lon":-44.10417,"lat":-22.52306,"uf":"RJ","n":1},{"lon":-44.08667,"lat":-19.76694,"uf":"MG","n":1},{"lon":-44.05889,"lat":-20.02194,"uf":"MG","n":1},{"lon":-44.05361,"lat":-19.93167,"uf":"MG","n":1},{"lon":-43.93778,"lat":-19.92083,"uf":"MG","n":7},{"lon":-43.85139,"lat":-19.76972,"uf":"MG","n":1},{"lon":-43.82556,"lat":-22.47,"uf":"RJ","n":1},{"lon":-43.7075,"lat":-22.74389,"uf":"RJ","n":2},{"lon":-43.45111,"lat":-22.75917,"uf":"RJ","n":1},{"lon":-43.41389,"lat":-22.8075,"uf":"RJ","n":1},{"lon":-43.39944,"lat":-22.76417,"uf":"RJ","n":2},{"lon":-43.37222,"lat":-22.80389,"uf":"RJ","n":3},{"lon":-43.35635,"lat":-22.91856,"uf":"RJ","n":1},{"lon":-43.31167,"lat":-22.78556,"uf":"RJ","n":2},{"lon":-43.20917,"lat":-22.11667,"uf":"RJ","n":3},{"lon":-43.18223,"lat":-22.90642,"uf":"RJ","n":10},{"lon":-43.17861,"lat":-22.505,"uf":"RJ","n":1},{"lon":-43.04056,"lat":-22.65278,"uf":"RJ","n":2},{"lon":-42.97822,"lat":-22.4167,"uf":"RJ","n":1},{"lon":-42.81861,"lat":-22.91944,"uf":"RJ","n":1},{"lon":-42.69667,"lat":-21.38917,"uf":"MG","n":1},{"lon":-42.36639,"lat":-21.13056,"uf":"MG","n":1},{"lon":-41.78324,"lat":-22.38484,"uf":"RJ","n":1},{"lon":-41.66528,"lat":-14.20361,"uf":"BA","n":1},{"lon":-39.74194,"lat":-17.535,"uf":"BA","n":1},{"lon":-38.96667,"lat":-12.26667,"uf":"BA","n":1},{"lon":-38.32417,"lat":-12.6975,"uf":"BA","n":1},{"lon":-37.07167,"lat":-10.91111,"uf":"SE","n":2},{"lon":-35.20944,"lat":-5.795,"uf":"RN","n":1},{"lon":-35.01472,"lat":-8.11278,"uf":"PE","n":1},{"lon":-34.85528,"lat":-8.00889,"uf":"PE","n":1}];
+ (function(){
+ const sel=document.getElementById('uf'),shown=document.getElementById('shown');
+ const ufs=[...new Set(DATA.map(p=>p.uf))].sort();
+ for(const uf of ufs){const o=document.createElement('option');o.value=uf;o.textContent=uf;sel.appendChild(o)}
+ if(!window.L){shown.textContent='Não foi possível carregar a biblioteca do mapa';return}
+ const map=L.map('map',{scrollWheelZoom:false}).setView([-14.2,-51.9],4);
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:18}).addTo(map);
+ const layer=L.layerGroup().addTo(map);
+ function draw(){
+  layer.clearLayers();const b=[];let count=0;
+  DATA.filter(p=>!sel.value||p.uf===sel.value).forEach(p=>{
+    const m=L.circleMarker([p.lat,p.lon],{radius:Math.min(10,5+Math.log2(p.n)),color:'#a16b2f',weight:1,fillColor:'#cf9c55',fillOpacity:.68});
+    const panel=document.createElement('div');
+    panel.textContent=p.n+' registro(s) em posição aproximada de CEP · '+p.uf+' · Não é o endereço da casa.';
+    m.bindPopup(panel);m.addTo(layer);b.push([p.lat,p.lon]);count+=p.n;
+  });
+  shown.textContent=count+' registros em '+b.length+' posições aproximadas';
+  if(b.length)map.fitBounds(b,{padding:[25,25],maxZoom:10});
+ }
+ sel.addEventListener('change',draw);draw();
+ })();</script></body></html>
