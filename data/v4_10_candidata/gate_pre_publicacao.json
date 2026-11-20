@@ -1,0 +1,16 @@
+{
+  "resultado": "INTEGRIDADE_TECNICA_OK",
+  "publicacao_geo_exata_autorizada": false,
+  "lote_cnpj_1237_recuperado": 1237,
+  "lote_critico_566": 566,
+  "outros_671_inalterados": 671,
+  "outros_registros_da_base_inalterados": 8044,
+  "estatisticas": {
+    "criticos_inspecionados": 566,
+    "criticos_coordenadas_herdadas": 200,
+    "criticos_cep_provisorio": 288,
+    "coordenadas_alteradas": 288,
+    "criticos_sem_geometria": 78
+  },
+  "ressalva": "Checks de consistência não comprovam os endereços físicos ou nomes de uso. A v4.10 permanece prévia técnica, ocultando coordenadas críticas por padrão."
+}
