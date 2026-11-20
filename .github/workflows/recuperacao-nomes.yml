@@ -28,6 +28,12 @@ jobs:
       - name: Reconstruir GeoJSON e validar contagens
         run: |
           python scripts/build_v4_9_nomes.py
+          # Repor os CSVs da primeira passagem para reconstrução idempotente:
+          # arquivos da terceira passagem anterior já guardam só 1 pendência.
+          git fetch --no-tags origin snapshot-v49-antes-segunda-recuperacao-2026-11-19 --depth=1
+          for arquivo in pendencias_sem_chave.csv antes_depois_1238.csv destino_537.csv auditoria_recuperacao.json; do
+            git show FETCH_HEAD:data/v4_9_candidata/$arquivo > data/v4_9_candidata/$arquivo
+          done
           python scripts/completar_nomes_v49_correspondencia.py
           python scripts/recuperar_nomes_v49_alinhamento_original.py
           python scripts/reparar_genericos_90_v49.py
