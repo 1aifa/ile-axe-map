@@ -1,0 +1,91 @@
+fonte,id_fonte,municipio,uf,status_nome,status_geo,nome_recuperado
+CEAO,7,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,12,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,27,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,34,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,35,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,36,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,40,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,48,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,95,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,164,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,241,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,283,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,369,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,376,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,399,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,408,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,409,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,413,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,431,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,445,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,481,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,517,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,571,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,576,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,592,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,616,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,664,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,671,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,674,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,680,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,689,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,703,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,704,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,708,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,733,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,741,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,765,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,772,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,805,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,809,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,831,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,883,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,918,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,921,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,940,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,981,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,987,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,989,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1037,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1066,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1067,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1089,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1101,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1106,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1108,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1131,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1134,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1152,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1171,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1198,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1199,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1211,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1227,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1242,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1247,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+CEAO,1285,Salvador,BA,nao_declarado_fonte,fonte_historica,nao
+Mapeando Axe,188,Belo Horizonte,MG,nao_declarado_fonte,street,nao
+Mapeando Axe,187,Porto Alegre,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,186,Porto Alegre,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,185,Belém,PA,nao_declarado_fonte,street,nao
+Mapeando Axe,184,Camaragibe,PE,nao_declarado_fonte,street,nao
+Mapeando Axe,183,Alvorada,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,182,Olinda,PE,nao_declarado_fonte,pendente,nao
+Mapeando Axe,181,Porto Alegre,RS,nao_declarado_fonte,pendente,nao
+Mapeando Axe,180,Recife,PE,nao_declarado_fonte,house_number,nao
+Mapeando Axe,179,Recife,PE,nao_declarado_fonte,street,nao
+Mapeando Axe,178,Abreu e Lima,PE,nao_declarado_fonte,pendente,nao
+Mapeando Axe,177,Porto Alegre,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,176,Jaboatão dos Guararapes,PE,nao_declarado_fonte,street,nao
+Mapeando Axe,175,Canoas,RS,nao_declarado_fonte,pendente,nao
+Mapeando Axe,174,Porto Alegre,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,173,Abreu e Lima,PE,nao_declarado_fonte,street,nao
+Mapeando Axe,172,Belém,PA,nao_declarado_fonte,pendente,nao
+Mapeando Axe,171,Moreno,PE,nao_declarado_fonte,street,nao
+Mapeando Axe,170,Porto Alegre,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,169,Porto Alegre,RS,nao_declarado_fonte,street,nao
+Mapeando Axe,168,Belo Horizonte,MG,nao_declarado_fonte,street,nao
+Mapeando Axe,167,Santa Bárbara,PA,nao_declarado_fonte,pendente,nao
+Mapeando Axe,166,Sabara,MG,nao_declarado_fonte,pendente,nao
+Mapeando Axe,165,Igarassu,PE,nao_declarado_fonte,pendente,nao
