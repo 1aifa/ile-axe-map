@@ -1,0 +1,416 @@
+{
+  "data/unified/google_places_results.json": {
+    "type": "array",
+    "length": 1926,
+    "keys": [
+      "id",
+      "nome",
+      "cidade",
+      "uf",
+      "lat",
+      "lng",
+      "source",
+      "google_name",
+      "google_address",
+      "google_lat",
+      "google_lng",
+      "classification",
+      "query",
+      "validated_at"
+    ],
+    "sample": [
+      {
+        "id": "cnpj_37.145.922/0001-05",
+        "nome": "CUSLE",
+        "cidade": "",
+        "uf": "SP",
+        "lat": -23.5383214,
+        "lng": -46.6391624,
+        "source": "receita_federal_cnpj",
+        "google_name": "CUSLE - Centro de Umbanda Sagrada Laços Espirituais",
+        "google_address": "R. Carlos Sanches Gonzales - Mairiporã, SP, 07600-000",
+        "google_lat": -23.2858074,
+        "google_lng": -46.5167189,
+        "classification": "nao_encontrado",
+        "query": "CUSLE, SP, Brasil",
+        "validated_at": "2026-08-03T14:03:40.516189"
+      },
+      {
+        "id": "cnpj_37.233.408/0001-13",
+        "nome": "TERREIRO DE UMBANDA SEARA DE LUZ PAI JOAO DE ANGOLA E BOIADEIRO SETE PEDREIRAS",
+        "cidade": "",
+        "uf": "SP",
+        "lat": -23.6718132,
+        "lng": -46.495456,
+        "source": "receita_federal_cnpj",
+        "google_name": "T.U. Seara de Luz Pai João de Angola e Boiadeiro Sete Pedreiras",
+        "google_address": "R. Rev. Martim Luther King, 176 - Centreville, Santo André - SP, 09120-130",
+        "google_lat": -23.6725798,
+        "google_lng": -46.4954222,
+        "classification": "confirmado",
+        "query": "TERREIRO DE UMBANDA SEARA DE LUZ PAI JOAO DE ANGOLA E BOIADEIRO SETE PEDREIRAS, SP, Brasil",
+        "validated_at": "2026-08-03T14:03:41.612626"
+      }
+    ]
+  },
+  "data/cnpj/geocoding/nominatim_results.json": {
+    "type": "array",
+    "length": 2673,
+    "keys": [
+      "cnpj",
+      "razao_social",
+      "nome_fantasia",
+      "cep",
+      "logradouro",
+      "numero",
+      "bairro",
+      "uf",
+      "codigo_municipio",
+      "data_inicio",
+      "lat",
+      "lng",
+      "precision",
+      "query_used",
+      "source"
+    ],
+    "sample": [
+      {
+        "cnpj": "37.145.922/0001-05",
+        "razao_social": "CENTRO DE UMBANDA SAGRADA LACOS ESPIRITUAIS",
+        "nome_fantasia": "CUSLE",
+        "cep": "02735030",
+        "logradouro": "BRITO PEIXOTO",
+        "numero": "37",
+        "bairro": "VILA PRIMAVERA",
+        "uf": "SP",
+        "codigo_municipio": "7107",
+        "data_inicio": "20190730",
+        "lat": -23.5383214,
+        "lng": -46.6391624,
+        "precision": "musical_instrument",
+        "query_used": "02735-030, SP, Brasil",
+        "source": "receita_federal_cnpj"
+      },
+      {
+        "cnpj": "37.233.408/0001-13",
+        "razao_social": "TERREIRO DE UMBANDA SEARA DE LUZ PAI JOAO DE ANGOLA E BOIADEIRO SETE PEDREIRAS",
+        "nome_fantasia": "",
+        "cep": "09120130",
+        "logradouro": "REVERENDO MARTIM LUTHER KING",
+        "numero": "176",
+        "bairro": "JARDIM MAREK",
+        "uf": "SP",
+        "codigo_municipio": "7057",
+        "data_inicio": "20200313",
+        "lat": -23.6718132,
+        "lng": -46.495456,
+        "precision": "residential",
+        "query_used": "RUA REVERENDO MARTIM LUTHER KING, 176, JARDIM MAREK, 09120-130, SP, Brasil",
+        "source": "receita_federal_cnpj"
+      }
+    ]
+  },
+  "data/unified/validation_all_sources_v2.geojson": {
+    "type": "dict",
+    "length": 5757,
+    "keys": [
+      "type",
+      "features"
+    ],
+    "sample": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -34.9275774,
+            -8.0188082
+          ]
+        },
+        "properties": {
+          "id": "mapeando_3922",
+          "nome": "Abaça Oyá Togum",
+          "cidade": "Recife",
+          "uf": "PE",
+          "source": "mapeando_axe",
+          "classification": "google_melhor",
+          "google_name": "ABASSA TOYA TOGUM",
+          "google_address": "R. Bujaru, 161 - Macaxeira, Recife - PE, 52090-120, Brasil",
+          "google_lat": -8.0188082,
+          "google_lng": -34.9275774,
+          "original_lat": -8.0015607,
+          "original_lng": -34.9373825,
+          "google_sim": 0.875,
+          "google_dist_m": 2201,
+          "color": "#e8a838",
+          "coordinate_source": "google"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -48.3988456,
+            -1.3448454
+          ]
+        },
+        "properties": {
+          "id": "mapeando_3921",
+          "nome": "Abassá Afro-Brasileiro Axé Omin Kaiá",
+          "cidade": "Ananindeua",
+          "uf": "PA",
+          "source": "mapeando_axe",
+          "classification": "novo_google",
+          "google_name": "Abassá Afro Brasileiro Maza Kaiala",
+          "google_address": "conjunto Cidade Nova 6 WE 85 - Coqueiro, Ananindeua - PA, 67140-260, Brasil",
+          "google_lat": -1.3448454,
+          "google_lng": -48.3988456,
+          "original_lat": null,
+          "original_lng": null,
+          "google_sim": 0.829,
+          "google_dist_m": null,
+          "color": "#c4700f",
+          "coordinate_source": "google"
+        }
+      }
+    ]
+  },
+  "data/mapeando_axe/geocoding/google_places_v2_results.json": {
+    "type": "array",
+    "length": 3923,
+    "keys": [
+      "source_record_id",
+      "name",
+      "city",
+      "state",
+      "google_query",
+      "google_status",
+      "google_results_count",
+      "google_all_evaluated",
+      "google_best",
+      "classification",
+      "nominatim_lat",
+      "nominatim_lng",
+      "nominatim_precision",
+      "processed_at"
+    ],
+    "sample": [
+      {
+        "source_record_id": "3922",
+        "name": "Abaça Oyá Togum",
+        "city": "Recife",
+        "state": "PE",
+        "google_query": "Abaça Oyá Togum Recife Pernambuco Brazil",
+        "google_status": "found",
+        "google_results_count": 4,
+        "google_all_evaluated": [
+          {
+            "place_id": "ChIJQSLgPb4ZqwcRyopT4I__odE",
+            "name": "ABASSA TOYA TOGUM",
+            "address": "R. Bujaru, 161 - Macaxeira, Recife - PE, 52090-120, Brasil",
+            "lat": -8.0188082,
+            "lng": -34.9275774,
+            "rating": null,
+            "user_ratings_total": null,
+            "business_status": "OPERATIONAL",
+            "types": [
+              "establishment",
+              "point_of_interest"
+            ],
+            "name_similarity": 0.875,
+            "city_match": true,
+            "state_match": true,
+            "distance_to_nominatim_m": 2201,
+            "score": 0.938
+          },
+          {
+            "place_id": "ChIJY-6FpNUZqwcReuW4GyUXZoM",
+            "name": "Roça Oxaguiã Oxum Iponda",
+            "address": "R. Três Morros, 35b - Córrego do Jenipapo, Recife - PE, 52171-011, Brasil",
+            "lat": -8.0026882,
+            "lng": -34.93762,
+            "rating": 4.9,
+            "user_ratings_total": 32,
+            "business_status": "OPERATIONAL",
+            "types": [
+              "establishment",
+              "point_of_interest"
+            ],
+            "name_similarity": 0.462,
+            "city_match": true,
+            "state_match": true,
+            "distance_to_nominatim_m": 128,
+            "score": 0.731
+          },
+          {
+            "place_id": "ChIJw5SSWeUZqwcRlFB12rNZnYw",
+            "name": "Asé Oyá Gìgán - Asé Casa Vermelha",
+            "address": "Av. Prof. José dos Anjos, 165 - Campo Grande, Recife - PE, 52051-345, Brasil",
+            "lat": -8.0270376,
+            "lng": -34.8868787,
+            "rating": 4.9,
+            "user_ratings_total": 10,
+            "business_status": "OPERATIONAL",
+            "types": [
+              "establishment",
+              "place_of_worship",
+              "point_of_interest"
+            ],
+            "name_similarity": 0.348,
+            "city_match": true,
+            "state_match": true,
+            "distance_to_nominatim_m": 6241,
+            "score": 0.674
+          },
+          {
+            "place_id": "ChIJvaAPh0gYqwcRGCrD3Bh3flw",
+            "name": "Sítio de Pai Adão - Ilê Ọba Ògúnté",
+            "address": "Estr. Velha de Água Fria, 1644 - Tamarineira, Recife - PE, 52111-000, Brasil",
+            "lat": -8.0208687,
+            "lng": -34.8960041,
+            "rating": 4.6,
+            "user_ratings_total": 126,
+            "business_status": "OPERATIONAL",
+            "types": [
+              "establishment",
+              "museum",
+              "place_of_worship",
+              "point_of_interest",
+              "school"
+            ],
+            "name_similarity": 0.273,
+            "city_match": true,
+            "state_match": true,
+            "distance_to_nominatim_m": 5037,
+            "score": 0.636
+          }
+        ],
+        "google_best": {
+          "place_id": "ChIJQSLgPb4ZqwcRyopT4I__odE",
+          "name": "ABASSA TOYA TOGUM",
+          "address": "R. Bujaru, 161 - Macaxeira, Recife - PE, 52090-120, Brasil",
+          "lat": -8.0188082,
+          "lng": -34.9275774,
+          "rating": null,
+          "user_ratings_total": null,
+          "business_status": "OPERATIONAL",
+          "types": [
+            "establishment",
+            "point_of_interest"
+          ],
+          "name_similarity": 0.875,
+          "city_match": true,
+          "state_match": true,
+          "distance_to_nominatim_m": 2201,
+          "score": 0.938
+        },
+        "classification": "google_melhor",
+        "nominatim_lat": -8.0015607,
+        "nominatim_lng": -34.9373825,
+        "nominatim_precision": "street",
+        "processed_at": "2026-08-03T02:30:14.723766"
+      },
+      {
+        "source_record_id": "3921",
+        "name": "Abassá Afro-Brasileiro Axé Omin Kaiá",
+        "city": "Ananindeua",
+        "state": "PA",
+        "google_query": "Abassá Afro-Brasileiro Axé Omin Kaiá Ananindeua Pará Brazil",
+        "google_status": "found",
+        "google_results_count": 1,
+        "google_all_evaluated": [
+          {
+            "place_id": "ChIJBRKcNXlhpJIR0IV5zbxcwvY",
+            "name": "Abassá Afro Brasileiro Maza Kaiala",
+            "address": "conjunto Cidade Nova 6 WE 85 - Coqueiro, Ananindeua - PA, 67140-260, Brasil",
+            "lat": -1.3448454,
+            "lng": -48.3988456,
+            "rating": 5,
+            "user_ratings_total": 5,
+            "business_status": "OPERATIONAL",
+            "types": [
+              "establishment",
+              "place_of_worship",
+              "point_of_interest"
+            ],
+            "name_similarity": 0.829,
+            "city_match": true,
+            "state_match": true,
+            "distance_to_nominatim_m": null,
+            "score": 0.914
+          }
+        ],
+        "google_best": {
+          "place_id": "ChIJBRKcNXlhpJIR0IV5zbxcwvY",
+          "name": "Abassá Afro Brasileiro Maza Kaiala",
+          "address": "conjunto Cidade Nova 6 WE 85 - Coqueiro, Ananindeua - PA, 67140-260, Brasil",
+          "lat": -1.3448454,
+          "lng": -48.3988456,
+          "rating": 5,
+          "user_ratings_total": 5,
+          "business_status": "OPERATIONAL",
+          "types": [
+            "establishment",
+            "place_of_worship",
+            "point_of_interest"
+          ],
+          "name_similarity": 0.829,
+          "city_match": true,
+          "state_match": true,
+          "distance_to_nominatim_m": null,
+          "score": 0.914
+        },
+        "classification": "novo_google",
+        "nominatim_lat": null,
+        "nominatim_lng": null,
+        "nominatim_precision": null,
+        "processed_at": "2026-08-03T02:30:16.496350"
+      }
+    ]
+  },
+  "data/v4_2/municipios_coords.json": {
+    "type": "dict",
+    "length": 5571,
+    "keys": [
+      "abadia de goias|GO",
+      "abadia dos dourados|MG",
+      "abadiania|GO",
+      "abaete|MG",
+      "abaetetuba|PA",
+      "abaiara|CE",
+      "abaira|BA",
+      "abare|BA",
+      "abatia|PR",
+      "abdon batista|SC",
+      "abel figueiredo|PA",
+      "abelardo luz|SC",
+      "abre campo|MG",
+      "abreu e lima|PE",
+      "abreulandia|TO",
+      "acaiaca|MG",
+      "acailandia|MA",
+      "acajutiba|BA",
+      "acara|PA",
+      "acarape|CE"
+    ],
+    "sample": [
+      {
+        "key": "abadia de goias|GO",
+        "value": [
+          -16.7573,
+          -49.4412,
+          "5200050"
+        ]
+      },
+      {
+        "key": "abadia dos dourados|MG",
+        "value": [
+          -18.4831,
+          -47.3916,
+          "3100104"
+        ]
+      }
+    ]
+  }
+}
