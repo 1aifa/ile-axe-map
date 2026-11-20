@@ -4,6 +4,7 @@ on:
     branches: [correcao-geocoordenadas-1237-2026-11-19]
     paths:
       - "data/v4_10_candidata/terreiros_nacional_v4_10_candidata.geojson"
+      - ".github/workflows/qa-pre-publicacao-v410.yml"
   workflow_dispatch:
 permissions:
   contents: write
