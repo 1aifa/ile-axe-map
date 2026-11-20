@@ -39,16 +39,16 @@ def main():
  assert report["lote_critico"]==566 and report["total_geojson"]==8610
  assert doc["metadata"]["nao_publicar_sem_revisao"] is True
  assert report["versao_publica_alterada"] is False
- byoriginal={f["properties"].get("entity_id"):f for f in a}
- bycandidate={f["properties"].get("entity_id"):f for f in b}
- assert set(byoriginal)==set(bycandidate)
+ # IDs históricos de algumas outras fontes se repetem. Comparar TODOS os
+ # 8.610 registros por posição para impedir mudanças silenciosas nesses grupos.
  criticalIDs={r["entity_id"] for r in audit}
  all_recovered={f["properties"]["entity_id"]:f for f in b if f["properties"].get("recuperacao_status")=="recuperado_fonte_cnpj"}
  assert len(all_recovered)==1237
  assert len(criticalIDs & all_recovered.keys())==566
  stats=Counter()
- for fid,feature in bycandidate.items():
-  before=byoriginal[fid]
+ for pos,(before,feature) in enumerate(zip(a,b)):
+  fid=feature["properties"].get("entity_id")
+  assert fid==before["properties"].get("entity_id"),("ordem ou ID alterados",pos,fid)
   p=feature["properties"]
   if fid not in criticalIDs:
    assert feature==before, ("registro fora do lote modificado",fid)
