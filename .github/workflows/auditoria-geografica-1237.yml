@@ -1,0 +1,44 @@
+name: Auditoria de publicacao — lote CNPJ 1237
+
+on:
+  push:
+    branches: [auditoria-publicacao-1237-2026-11-19]
+    paths:
+      - "scripts/auditar_geolocalizacao_1237.py"
+      - ".github/workflows/auditoria-geografica-1237.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do snapshot v4.9 em branch isolada
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Reconstruir os 1237 vinculos e auditar geografia
+        run: python scripts/auditar_geolocalizacao_1237.py
+      - name: Disponibilizar auditoria individual e resumo
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-publicacao-1237
+          path: |
+            data/v4_9_candidata/auditoria_publicacao_1237.csv
+            data/v4_9_candidata/relatorio_auditoria_geografica_1237.json
+          retention-days: 90
+      - name: Versionar somente os relatorios na branch isolada
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/v4_9_candidata/auditoria_publicacao_1237.csv data/v4_9_candidata/relatorio_auditoria_geografica_1237.json
+          if ! git diff --cached --quiet; then
+            git commit -m "audit: registrar fila de validacao dos 1237 CNPJ (sem publicar)"
+            git push origin HEAD:auditoria-publicacao-1237-2026-11-19
+          fi
