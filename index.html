@@ -551,7 +551,17 @@
     }
     function rotuloTrad(p) { return p._tradicao || 'Não especificada'; }
 
-    function getName(p) { return p.nome || p.name || p.title || 'Terreiro sem nome'; }
+    function getName(p) {
+      const name = String(p.nome || p.name || p.title || '').trim();
+      const norm = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      const unknown = ['nao informado', 'sem nome', 'terreiro sem nome'].includes(norm);
+      if (unknown && (p.nome_status === 'nao_declarado_fonte' || p.nome_status === 'nome_da_casa_ausente_fonte')) {
+        const fonte = (p.fontes || []).includes('ceao') ? 'CEAO' : (p.fontes || []).includes('mapeando_axe_csv') ? 'Mapeando Axé' : 'Fonte histórica';
+        const referencia = String(p.fonte_id || p.ceao_id || '').trim();
+        return 'Nome da casa não informado — ' + fonte + (referencia ? ' #' + referencia : '');
+      }
+      return name || 'Terreiro sem nome';
+    }
     function getFonteLabel(p) {
       // GeoJSON unificado: fonte principal da entidade, com prioridade de confiabilidade
       if (Array.isArray(p.fontes) && p.fontes.length) {
@@ -849,6 +859,8 @@
       else if (p.geo_status && String(p.geo_status).indexOf('places_v4') !== -1) displayProps.geo_status = 'Localização revalidada (Google Places + controle municipal)';
       else if (p.geo_status && String(p.geo_status).indexOf('geocode_cnpj_v46') !== -1) displayProps.geo_status = 'Localização revalidada (endereço oficial CNPJ, precisão de via)';
       else if (p.geo_status && String(p.geo_status).indexOf('coordenada_validada_responsavel') !== -1) displayProps.geo_status = 'Localização confirmada pela equipe responsável';
+      else if (p.geo_status && String(p.geo_status).indexOf('mapeando_axe_v2_') !== -1) displayProps.geo_status = 'Localização aproximada conforme fonte histórica; não indica necessariamente a entrada';
+      else if (p.geo_status && String(p.geo_status).indexOf('fonte_ceao_sem_precisao_de_porta') !== -1) displayProps.geo_status = 'Coordenada da base CEAO/UFBA; precisão da entrada não confirmada';
       else if (p.geo_status && String(p.geo_status).indexOf('herdado_v2') !== -1) displayProps.geo_status = 'Georreferenciado pela base validada da Bahia';
       const [lng, lat] = feature.geometry.coordinates;
       $('detail-nacao').textContent = rotuloTrad(p) + ' · ' + rotuloNacao(p);
@@ -867,6 +879,8 @@
         ['Fundação', p.ano_fundacao || ''],
         ['Orixá regente', p.regente || ''],
         ['Município', p.municipio || ''],
+        ['Bairro', p.bairro || ''],
+        ['Situação do nome', p.nome_status === 'nome_cadastral_cnpj_pendente_validacao_da_casa' ? 'Nome documental (CNPJ); nome de uso da casa ainda não validado' : p.nome_status === 'nao_declarado_fonte' ? 'Nome da casa não informado no cadastro histórico' : p.nome_status === 'nome_da_casa_ausente_fonte' ? 'Nome oficial pendente de confirmação comunitária' : p.nome_status === 'recuperado_por_registro_historico_idêntico_pendente_validacao' ? 'Nome encontrado em outra ficha da mesma fonte, com endereço, CEP, liderança, religião, nação e ano coincidentes; possível duplicidade em revisão' : ''],
         ['Estado', p.uf || ''],
         ['Precisão da localização', displayProps.geo_status || '']
       ];
@@ -912,7 +926,7 @@
         }
         if (q) {
           const p = f.properties;
-          const haystack = ((getName(p) || '') + ' ' + (p.nacao || '') + ' ' + (p.municipio || '') + ' ' + (p.uf || '')).toLowerCase();
+          const haystack = ((getName(p) || '') + ' ' + (p.nacao || '') + ' ' + (p.municipio || '') + ' ' + (p.uf || '') + ' ' + (p.fonte_id || '') + ' ' + (p.ceao_id || '') + ' ' + (p.entity_id || '')).toLowerCase();
           if (!haystack.includes(q)) return false;
         }
         return activeTrad.has(f.properties._tradicao) && passaNacao(f.properties) && activeFonte.has(getFonteLabel(f.properties));
@@ -997,10 +1011,11 @@
     // === Load ===
     map.whenReady(async function() {
       try {
-        const [geoResponse] = await Promise.all([fetch('data/v4_8/terreiros_nacional_v4_8.geojson')]);
+        const [geoResponse] = await Promise.all([fetch('data/v4_9_candidata/terreiros_nacional_v4_9_candidata.geojson')]);
         if (!geoResponse.ok) throw new Error('GeoJSON ' + geoResponse.status);
         const data = await geoResponse.json();
-        $('dataset-total').textContent = data.features.length.toLocaleString('pt-BR') + ' registros';
+        var semLocal = data.features.filter(function(f) { return !f.geometry || !Array.isArray(f.geometry.coordinates); }).length;
+        $('dataset-total').textContent = data.features.length.toLocaleString('pt-BR') + ' registros' + (semLocal ? ' · ' + semLocal + ' sem localização verificável' : '');
         features = data.features
           .filter(f => f.geometry && f.geometry.type === 'Point' && Array.isArray(f.geometry.coordinates))
           .map(f => ({ ...f, properties: { ...(f.properties || {}), _tradicao: classify(f.properties || {}), _nacoes: nacoesOf(f.properties || {}) } }));
