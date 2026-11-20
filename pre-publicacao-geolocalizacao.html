@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ilê Axé Map — Pré-publicação geográfica v4.10 candidata</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#faf7f1;color:#281c17}
+header,main,footer{max-width:1160px;margin:auto;padding:22px}header{padding-top:30px}
+h1{font-family:Georgia,serif;font-size:clamp(25px,4vw,40px);margin:3px 0 10px;color:#4f2f23}
+h2{font-size:19px;margin:18px 0 8px}.eyebrow{text-transform:uppercase;color:#98612b;letter-spacing:.12em;font-size:11px;font-weight:700}
+.warning{border-left:4px solid #ae672d;background:#fff0d7;padding:12px 16px;border-radius:5px;margin:15px 0}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0}
+.metric{background:white;border:1px solid #e2d8c8;border-radius:10px;padding:12px}.metric b{display:block;font-size:26px;color:#784225}.metric small{font-size:12px;color:#62564c}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;padding:14px;border:1px solid #dfd5c6;border-radius:9px;background:white}
+.controls label{display:inline-flex;align-items:center;gap:7px}.controls input[type=search]{padding:9px 12px;border:1px solid #beb0a0;border-radius:7px;min-width:220px;flex:1}
+.controls select{padding:9px;border:1px solid #beb0a0;border-radius:7px;background:white}
+#map{height:525px;background:#e7ede8;border:1px solid #d6cbbd;border-radius:10px;margin-top:12px}
+#status{font-size:13px;color:#655951}a{color:#85441f}
+.legend{display:flex;gap:14px;flex-wrap:wrap;color:#68564e;font-size:13px;margin-top:10px}
+.dot{display:inline-block;height:10px;width:10px;border-radius:50%;margin-right:4px}
+footer{font-size:12px;color:#655b54}input,select{font:inherit}
+@media(max-width:680px){.metrics{grid-template-columns:1fr 1fr}#map{height:430px}.controls input[type=search]{width:100%}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Ilê Axé Map · Ambiente de revisão · não homologado</div>
+<h1>Pré-publicação geográfica v4.10</h1>
+<p>Inspeção dos 1.237 registros com nomes recuperados documentalmente. Esta página utiliza somente a versão candidata da branch de correção.</p>
+<div class="warning"><strong>Não publicar como endereços exatos.</strong> As coordenadas derivadas de CEP representam apenas a região do logradouro; outros pontos são herdados e ainda dependem de validação. Não há confirmação de entrada/porta do terreiro. A versão principal do site não é modificada por esta prévia.</div>
+</header>
+<main>
+<div class="metrics">
+<div class="metric"><b id="total">—</b><small>Nomes CNPJ recuperados</small></div>
+<div class="metric"><b id="critico">—</b><small>Registros críticos em triagem</small></div>
+<div class="metric"><b id="provisorio">—</b><small>Coordenadas provisórias por CEP</small></div>
+<div class="metric"><b id="semgeo">—</b><small>Críticos sem geometria</small></div>
+</div>
+<h2>Mapa de auditoria</h2>
+<div class="controls">
+<label><input type="checkbox" id="permitir"> Exibir posições <strong>não validadas</strong> para inspeção</label>
+<input type="search" id="busca" aria-label="Buscar por terreiro, entidade ou CEP" placeholder="Buscar nome, CEP, UF ou ID">
+<select id="grupo" aria-label="Filtro de qualidade">
+<option value="todos">Todos os 1.237</option>
+<option value="critico">Somente 566 críticos</option>
+<option value="outros">Demais registros</option>
+<option value="cep">Posições provisórias por CEP</option>
+<option value="semgeo">Sem geometria</option>
+</select>
+</div>
+<div id="map" role="region" aria-label="Mapa de auditoria de terreiros com coordenadas pendentes"></div>
+<div class="legend"><span><i class="dot" style="background:#b46d23"></i> Posição aproximada por CEP</span><span><i class="dot" style="background:#786f65"></i> Coordenada herdada sem validação</span><span><i class="dot" style="background:#a04b40"></i> Prioridade crítica</span></div>
+<p id="status" role="status" aria-live="polite">Carregando versão candidata...</p>
+<p><a href="https://github.com/1aifa/ile-axe-map/tree/correcao-geocoordenadas-1237-2026-11-19">Arquivos e código da revisão</a> · <a href="https://github.com/1aifa/ile-axe-map/blob/auditoria-publicacao-1237-2026-11-19/data/v4_9_candidata/auditoria_publicacao_1237.csv">Planilha original de 1.237 auditorias</a></p>
+</main>
+<footer>Prévia técnica. Pontos candidatos não são comprovação da existência, do nome de uso, da situação cadastral nem do endereço atual de qualquer comunidade. Se necessário, obter validação e consentimento antes da divulgação de localização exata.</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+(function(){
+const get=id=>document.getElementById(id);
+let records=[];
+let map=null,cluster=null;
+function validCoord(f){const c=(f.geometry||{}).coordinates||[];return (f.geometry||{}).type==='Point'&&c.length>=2&&Number.isFinite(Number(c[0]))&&Number.isFinite(Number(c[1]));}
+function provisional(f){return String((f.properties||{}).coord_origin||'').includes('brasilapi_cep_v2');}
+function critical(f){return (f.properties||{}).revisao_geografica==='pendente_confirmacao_endereco_real_da_casa';}
+function refresh(){
+ if(!map||!cluster)return;
+ cluster.clearLayers();
+ const allow=get('permitir').checked,q=get('busca').value.trim().toLocaleLowerCase('pt-BR'),group=get('grupo').value;
+ let matching=0,rendered=0;
+ for(const f of records){
+   const p=f.properties||{};
+   const crit=critical(f),prov=provisional(f),has=validCoord(f);
+   if(group==='critico'&&!crit||group==='outros'&&crit||group==='cep'&&!prov||group==='semgeo'&&has)continue;
+   if(q&&!([p.nome,p.cep,p.uf,p.municipio,p.entity_id,p.cnpj_referencia_nome].join(' ').toLocaleLowerCase('pt-BR').includes(q)))continue;
+   matching++;
+   if(!allow||!has)continue;
+   const c=f.geometry.coordinates;
+   const color=prov?'#b46d23':crit?'#a04b40':'#786f65';
+   const marker=L.circleMarker([c[1],c[0]],{radius:6,weight:1,color,fillColor:color,fillOpacity:.65});
+   const box=document.createElement('div');
+   const name=document.createElement('strong');name.textContent=p.nome||'Registro sem nome';box.appendChild(name);
+   const line=document.createElement('p');line.textContent=[p.municipio,p.uf,'CEP '+(p.cep||'?')].filter(Boolean).join(' · ');box.appendChild(line);
+   const note=document.createElement('small');note.textContent=prov?'Posição aproximada por CEP — NÃO representa a entrada':crit?'Prioridade crítica — localização não homologada':'Coordenada herdada — localização não homologada';
+   box.appendChild(note);marker.bindPopup(box);
+   cluster.addLayer(marker);rendered++;
+ }
+ const noGeo=records.filter(f=>critical(f)&&!validCoord(f)).length;
+ get('status').textContent=matching+' registros no filtro · '+rendered+' posições em visualização · '+noGeo+' críticos sem geometria. '+(!allow?'Ative a caixa acima para inspecionar os pontos ainda não validados.':'Nenhum ponto exibido deve ser considerado endereço confirmado.');
+ if(allow&&rendered&&q){const bounds=cluster.getBounds();if(bounds.isValid())map.fitBounds(bounds.pad(.15),{maxZoom:13});}
+}
+async function init(){
+ if(!window.L){get('status').textContent='Falha no carregamento da biblioteca cartográfica.';return;}
+ map=L.map('map',{scrollWheelZoom:false}).setView([-14.2,-52.2],4);
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:18}).addTo(map);
+ cluster=L.markerClusterGroup?L.markerClusterGroup({chunkedLoading:true,showCoverageOnHover:false}):L.featureGroup();
+ map.addLayer(cluster);
+ try{
+ const r=await fetch('data/v4_10_candidata/terreiros_nacional_v4_10_candidata.geojson',{cache:'no-store'});
+ if(!r.ok)throw new Error('GeoJSON candidato indisponível (HTTP '+r.status+')');
+ const j=await r.json();records=(j.features||[]).filter(f=>(f.properties||{}).recuperacao_status==='recuperado_fonte_cnpj');
+ if(records.length!==1237)throw new Error('Quantidade inesperada de registros: '+records.length);
+ const cr=records.filter(critical);
+ get('total').textContent=records.length.toLocaleString('pt-BR');
+ get('critico').textContent=cr.length.toLocaleString('pt-BR');
+ get('provisorio').textContent=records.filter(provisional).length.toLocaleString('pt-BR');
+ get('semgeo').textContent=cr.filter(f=>!validCoord(f)).length.toLocaleString('pt-BR');
+ ['permitir','grupo','busca'].forEach(id=>get(id).addEventListener(id==='busca'?'input':'change',refresh));
+ refresh();
+ }catch(e){get('status').textContent='Prévia sem dados: '+e.message+'. Consulte os artefatos do GitHub Actions. A página não substitui o site oficial.';}
+}
+init();
+})();
+</script></body></html>
