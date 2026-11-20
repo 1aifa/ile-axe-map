@@ -1,0 +1,61 @@
+name: Publicar preview geográfica anônima no fork
+on:
+  push:
+    branches: [correcao-geocoordenadas-1237-2026-11-19]
+    paths:
+      - "scripts/gerar_preview_geo_segura.py"
+      - ".github/workflows/publicar-preview-geo-segura.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publicar-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Verificar integridade da candidata (não comprova endereço)
+        run: python scripts/qa_pre_publicacao_v410.py
+      - name: Criar página de pontos aproximados anonimizados
+        run: python scripts/gerar_preview_geo_segura.py
+      - name: Verificar que apenas a página anônima é entregue
+        shell: bash
+        run: |
+          test -f preview_geo_segura/index.html
+          test -f preview_geo_segura/robots.txt
+          ! grep -Eio '"(cnpj|cpf|cep|numero_cnpj|logradouro_cnpj|lideranca)"' preview_geo_segura/index.html
+          grep -q '288' preview_geo_segura/index.html
+      - name: Guardar prévia independente
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-geografica-anonima-v410
+          path: preview_geo_segura/
+          include-hidden-files: true
+          retention-days: 90
+      - name: Criar branch de publicação independente gh-pages no fork
+        shell: bash
+        run: |
+          set -euo pipefail
+          site="$(mktemp -d)"
+          git worktree add --detach "$site" HEAD
+          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+            git -C "$site" fetch origin gh-pages
+            git -C "$site" switch -C gh-pages FETCH_HEAD
+            git -C "$site" rm -rf --ignore-unmatch .
+          else
+            git -C "$site" switch --orphan gh-pages
+          fi
+          cp preview_geo_segura/index.html "$site/index.html"
+          cp preview_geo_segura/.nojekyll "$site/.nojekyll"
+          cp preview_geo_segura/robots.txt "$site/robots.txt"
+          git -C "$site" config user.name "github-actions[bot]"
+          git -C "$site" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$site" add -A
+          git -C "$site" commit -m "preview: página isolada com pontos regionais anonimizados v4.10"
+          git -C "$site" push origin HEAD:refs/heads/gh-pages
+          echo "Branch de site independente: gh-pages"
