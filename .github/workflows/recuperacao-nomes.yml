@@ -47,6 +47,12 @@ jobs:
           assert j["metadata"]["ceao_reconstituidos"]==66
           assert j["metadata"]["mapeando_geocodificado_v2"]==16
           assert j["metadata"]["mapeando_sem_geo_confiavel"]==8
+          assert j["metadata"]["nomes_genericos_sem_nome_oficial"]==89
+          assert j["metadata"]["nomes_genericos_recuperados_registro_historico"]==1
+          ficha=[x for x in f if x.get('properties',{}).get('entity_id')=='mapeando_axe_2010_176']
+          assert len(ficha)==1
+          assert ficha[0]['properties']['nome']=='Centro Espírita Cabocla Jacira'
+          assert ficha[0]['properties']['nome_fonte_correspondencia_id']=='3070'
           rec=[x for x in f if x.get('properties',{}).get('recuperacao_status')=='recuperado_fonte_cnpj']
           pend=[x for x in f if x.get('properties',{}).get('recuperacao_status')=='pendente_revisao']
           assert (len(rec),len(pend)) == (1237,0)
